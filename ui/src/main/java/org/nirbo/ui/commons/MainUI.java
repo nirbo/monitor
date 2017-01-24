@@ -9,7 +9,7 @@ import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
 
 @SpringUI(path=MainUI.NAME)
-@Title("Monitor App Title")
+@Title("Monitor App")
 @Theme("monitorTheme")
 public class MainUI extends UI {
 
@@ -17,9 +17,7 @@ public class MainUI extends UI {
 
     @Override
     protected void init(VaadinRequest request) {
-        VerticalLayout rootLayout = new VerticalLayout();
-        rootLayout.addComponent(new Label("Testing"));
-        rootLayout.setMargin(true);
+        VerticalLayout rootLayout = new MainUILayoutFactory().createMainLayout();
 
         setContent(rootLayout);
     }
