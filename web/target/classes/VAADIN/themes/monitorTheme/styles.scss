@@ -1,0 +1,7 @@
+@import "addons.scss";
+@import "monitorTheme";
+
+.monitorTheme {
+  @include addons;
+  @include monitorTheme;
+}

@@ -10,7 +10,7 @@ import com.vaadin.ui.VerticalLayout;
 
 @SpringUI(path=MainUI.NAME)
 @Title("Monitor App Title")
-@Theme("valo")
+@Theme("monitorTheme")
 public class MainUI extends UI {
 
     public static final String NAME = "/";
