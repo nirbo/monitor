@@ -6,6 +6,7 @@ import com.vaadin.server.VaadinRequest;
 import com.vaadin.spring.annotation.SpringUI;
 import com.vaadin.spring.navigator.SpringViewProvider;
 import com.vaadin.ui.*;
+import com.vaadin.ui.themes.ValoTheme;
 import org.nirbo.navigator.MonitorNavigator;
 import org.nirbo.utils.CommonStrings;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -55,6 +56,8 @@ public class MainUI extends UI {
     private TabSheet createMainTabsLayout() {
         TabSheet mainTabs = new TabSheet();
         mainTabs.setSizeFull();
+        mainTabs.addStyleName(ValoTheme.TABSHEET_EQUAL_WIDTH_TABS);
+        mainTabs.addStyleName(ValoTheme.TABSHEET_PADDED_TABBAR);
 
         VerticalLayout serversTabLayout = new VerticalLayout();
         serversTabLayout.setMargin(true);

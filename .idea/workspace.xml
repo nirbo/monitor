@@ -2,39 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34686f9f-7e02-45eb-add0-39895c2a8455" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_r05.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/commons/MainUILayoutBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/commons/MainUILayoutFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ui/target/classes/org/nirbo/ui/commons/MainUILayoutBuilder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ui/target/classes/org/nirbo/ui/commons/MainUILayoutFactory$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ui/target/classes/org/nirbo/ui/commons/MainUILayoutFactory$MainUILayout.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ui/target/classes/org/nirbo/ui/commons/MainUILayoutFactory.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/java/org/nirbo/navigator/MonitorNavigator.java" afterPath="$PROJECT_DIR$/ui/src/main/java/org/nirbo/navigator/MonitorNavigator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/target/classes/org/nirbo/ui/commons/MainUI.class" afterPath="$PROJECT_DIR$/ui/target/classes/org/nirbo/ui/commons/MainUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/target/ui-0.0.1.jar" afterPath="$PROJECT_DIR$/ui/target/ui-0.0.1.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/target/utils-0.0.1.jar" afterPath="$PROJECT_DIR$/utils/target/utils-0.0.1.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE.war" afterPath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE.war.original" afterPath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE.war.original" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/ui-0.0.1.jar" afterPath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/ui-0.0.1.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/utils-0.0.1.jar" afterPath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/utils-0.0.1.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/web_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/web_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/database.iml" afterPath="$PROJECT_DIR$/database/database.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/model.iml" afterPath="$PROJECT_DIR$/model/model.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitor.iml" afterPath="$PROJECT_DIR$/monitor.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/service.iml" afterPath="$PROJECT_DIR$/service/service.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/pom.xml" afterPath="$PROJECT_DIR$/ui/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/commons/MainUI.java" afterPath="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/commons/MainUI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/ui/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/ui/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/ui.iml" afterPath="$PROJECT_DIR$/ui/ui.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/utils/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/utils.iml" afterPath="$PROJECT_DIR$/utils/utils.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/web/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/web.iml" afterPath="$PROJECT_DIR$/web/web.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -60,8 +28,8 @@
       <file leaf-file-name="MainUI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/commons/MainUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="74" column="83" lean-forward="true" selection-start-line="74" selection-start-column="83" selection-end-line="74" selection-end-column="83" />
+            <state relative-caret-position="408">
+              <caret line="57" column="31" lean-forward="true" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -90,6 +58,11 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>tab</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -917,12 +890,12 @@
       <workItem from="1485265119504" duration="132000" />
       <workItem from="1485268856481" duration="6346000" />
       <workItem from="1485334514375" duration="12000" />
-      <workItem from="1485334926506" duration="6564000" />
+      <workItem from="1485334926506" duration="8518000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41045000" />
+    <option name="totallyTimeSpent" value="42999000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -985,14 +958,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/commons/MainUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/commons/MainUILayoutFactory.java" />
     <entry file="file://$PROJECT_DIR$/utils/src/main/java/org/nirbo/utils/CommonStrings.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1252,13 +1217,6 @@
     <entry file="file://$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/commons/MainUILayoutBuilder.java" />
     <entry file="file://$PROJECT_DIR$/hs_err_pid7408.log" />
     <entry file="file://$PROJECT_DIR$/replay_pid11444.log" />
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/VAADIN/themes/monitorTheme/monitorTheme.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/org/nirbo/launcher/SpringBootApp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -1359,10 +1317,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/vaadin/vaadin-server/7.7.3/vaadin-server-7.7.3-sources.jar!/com/vaadin/ui/themes/ValoTheme.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3054">
+          <caret line="739" column="31" lean-forward="false" selection-start-line="739" selection-start-column="31" selection-end-line="739" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/VAADIN/themes/monitorTheme/monitorTheme.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/commons/MainUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="74" column="83" lean-forward="true" selection-start-line="74" selection-start-column="83" selection-end-line="74" selection-end-column="83" />
+        <state relative-caret-position="408">
+          <caret line="57" column="31" lean-forward="true" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
           <folding />
         </state>
       </provider>
