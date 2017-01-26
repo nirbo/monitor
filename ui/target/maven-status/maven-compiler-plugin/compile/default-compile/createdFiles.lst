@@ -1,1 +1,4 @@
-org/nirbo/navigator/MonitorNavigator.class
+org/nirbo/ui/commons/MainUILayoutFactory.class
+org/nirbo/ui/commons/MainUILayoutFactory$MainUILayout.class
+org/nirbo/ui/commons/MainUILayoutFactory$1.class
+org/nirbo/ui/commons/MainUIComponentBuilder.class

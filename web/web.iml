@@ -113,5 +113,6 @@
     <orderEntry type="library" name="Maven: org.jsoup:jsoup:1.8.3" level="project" />
     <orderEntry type="library" name="Maven: com.google.guava:guava:r05" level="project" />
     <orderEntry type="module" module-name="utils" />
+    <orderEntry type="library" name="Maven: org.nirbo.model.entity:Server:0.0.1" level="project" />
   </component>
 </module>

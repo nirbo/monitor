@@ -7,7 +7,6 @@ import com.vaadin.spring.annotation.SpringUI;
 import com.vaadin.spring.navigator.SpringViewProvider;
 import com.vaadin.ui.*;
 import com.vaadin.ui.themes.ValoTheme;
-import org.nirbo.navigator.MonitorNavigator;
 import org.nirbo.utils.CommonStrings;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
@@ -23,60 +22,24 @@ public class MainUI extends UI {
     private ApplicationContext applicationContext;
 
     @Autowired
-    private SpringViewProvider viewProvider;
-
-    Panel mainContentPanel = new Panel();
-    TabSheet mainTabs = createMainTabsLayout();
+    private MainUILayoutFactory mainUILayoutFactory;
 
     @Override
     protected void init(VaadinRequest request) {
         VerticalLayout rootLayout = new VerticalLayout();
+        Panel mainContentPanel = new Panel();
+
         rootLayout.setSizeFull();
         rootLayout.setMargin(true);
 
         mainContentPanel.setSizeFull();
-
-        HorizontalLayout mainUiLayout = new HorizontalLayout();
-        mainUiLayout.setMargin(true);
-        mainUiLayout.setSizeFull();
-        mainUiLayout.addComponent(mainTabs);
-        mainUiLayout.setExpandRatio(mainTabs, 1);
-
-        mainContentPanel.setContent(mainUiLayout);
+        mainContentPanel.setContent(mainUILayoutFactory.createLayoutComponent());
 
         rootLayout.addComponent(mainContentPanel);
         rootLayout.setComponentAlignment(mainContentPanel, Alignment.TOP_LEFT);
         rootLayout.setExpandRatio(mainContentPanel, 1);
 
-//        initNavigator();
-
         setContent(rootLayout);
     }
 
-    private TabSheet createMainTabsLayout() {
-        TabSheet mainTabs = new TabSheet();
-        mainTabs.setSizeFull();
-        mainTabs.addStyleName(ValoTheme.TABSHEET_EQUAL_WIDTH_TABS);
-        mainTabs.addStyleName(ValoTheme.TABSHEET_PADDED_TABBAR);
-
-        VerticalLayout serversTabLayout = new VerticalLayout();
-        serversTabLayout.setMargin(true);
-        serversTabLayout.addComponent(new Label("Servers Content Placeholder"));
-
-        VerticalLayout ticketsTabLayout = new VerticalLayout();
-        ticketsTabLayout.setMargin(true);
-        ticketsTabLayout.addComponent(new Label("Tickets Content Placeholder"));
-
-        mainTabs.addTab(serversTabLayout, CommonStrings.MAIN_TABSHEET_SERVERS.getString());
-        mainTabs.addTab(ticketsTabLayout, CommonStrings.MAIN_TABSHEET_TICKETS.getString());
-
-        return mainTabs;
-    }
-
-    private void initNavigator() {
-        MonitorNavigator navigator = new MonitorNavigator(this, mainContentPanel);
-        applicationContext.getAutowireCapableBeanFactory().autowireBean(navigator);
-        navigator.addProvider(viewProvider);
-        navigator.navigateTo(this.NAME);
-    }
 }

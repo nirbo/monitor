@@ -89,6 +89,7 @@
           <element id="archive" name="utils-0.0.1.jar">
             <element id="module-output" name="utils" />
           </element>
+          <element id="library" level="project" name="Maven: org.nirbo.model.entity:Server:0.0.1" />
         </element>
       </element>
       <element id="directory" name="META-INF">
