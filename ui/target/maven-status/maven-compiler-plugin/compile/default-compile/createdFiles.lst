@@ -1,4 +1,8 @@
 org/nirbo/ui/commons/MainUILayoutFactory.class
+org/nirbo/ui/serverstab/ServersTabUILayoutFactory$1.class
 org/nirbo/ui/commons/MainUILayoutFactory$MainUILayout.class
-org/nirbo/ui/commons/MainUILayoutFactory$1.class
+org/nirbo/ui/serverstab/ServersTabUILayoutFactory.class
+org/nirbo/ui/serverstab/ServersTabUILayoutFactory$ServersTabUILayout.class
 org/nirbo/ui/commons/MainUIComponentBuilder.class
+org/nirbo/ui/serverstab/ServersTabUILayoutBuilder.class
+org/nirbo/ui/commons/MainUILayoutFactory$1.class

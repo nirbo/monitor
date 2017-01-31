@@ -2,10 +2,15 @@ package org.nirbo.ui.commons;
 
 import com.vaadin.ui.*;
 import com.vaadin.ui.themes.ValoTheme;
+import org.nirbo.ui.serverstab.ServersTabUILayoutFactory;
 import org.nirbo.utils.CommonStrings;
+import org.springframework.beans.factory.annotation.Autowired;
 
 @org.springframework.stereotype.Component
 public class MainUILayoutFactory implements MainUIComponentBuilder {
+
+    @Autowired
+    private ServersTabUILayoutFactory serversTabUILayoutFactory;
 
     private TabSheet mainTabs;
 
@@ -17,9 +22,7 @@ public class MainUILayoutFactory implements MainUIComponentBuilder {
             mainTabs.addStyleName(ValoTheme.TABSHEET_EQUAL_WIDTH_TABS);
             mainTabs.addStyleName(ValoTheme.TABSHEET_PADDED_TABBAR);
 
-            VerticalLayout serversTabLayout = new VerticalLayout();
-            serversTabLayout.setMargin(true);
-            serversTabLayout.addComponent(new Label("Servers Content Placeholder"));
+            Layout serversTabLayout = serversTabUILayoutFactory.createServersTabLayout();
 
             VerticalLayout ticketsTabLayout = new VerticalLayout();
             ticketsTabLayout.setMargin(true);
@@ -36,7 +39,7 @@ public class MainUILayoutFactory implements MainUIComponentBuilder {
             return this;
         }
 
-        public MainUILayout layout() {
+        public MainUILayout createLayout() {
             addComponent(mainTabs);
             setComponentAlignment(mainTabs, Alignment.TOP_LEFT);
 
@@ -45,7 +48,7 @@ public class MainUILayoutFactory implements MainUIComponentBuilder {
     }
 
     public Component createLayoutComponent() {
-        return new MainUILayout().init().layout();
+        return new MainUILayout().init().createLayout();
     }
 
 }

@@ -4,6 +4,6 @@ import com.vaadin.ui.Component;
 
 public interface MainUIComponentBuilder {
 
-    public Component createLayoutComponent();
+    Component createLayoutComponent();
 
 }

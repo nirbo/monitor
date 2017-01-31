@@ -1,24 +1,43 @@
 package org.nirbo.model.entity;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name="SERVER")
 public class Server {
 
-    private Integer id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name="id")
+    private Long id;
+
+    @Column(name="server_location")
     private String serverLocation;
+
+    @Column(name="server_name")
     private String serverName;
+
+    @Column(name="server_mgmt_ip")
     private String serverMgmtIP;
+
+    @Column(name="server_data_net1")
     private String serverDataNet1;
+
+    @Column(name="server_data_net2")
     private String serverDataNet2;
+
+    @Column(name="server_owner")
     private String serverOwner;
 
     public Server() {
 
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -74,6 +93,7 @@ public class Server {
     public String toString() {
         return "Server Name: " + serverName
                 + " Server MGMT IP: " + serverMgmtIP
-                + " Server Location: " + serverLocation;
+                + " Server Location: " + serverLocation
+                + " Server Owner: " + serverOwner;
     }
 }
