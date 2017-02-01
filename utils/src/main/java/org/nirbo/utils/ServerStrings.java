@@ -1,0 +1,25 @@
+package org.nirbo.utils;
+
+public enum ServerStrings {
+
+    ADD_SERVER("Add Server"),
+    DELETE_SERVER("Delete Server"),
+    SERVER_NAME("Server Name"),
+    SERVER_MGMT_IP("Mgmt IP"),
+    SERVER_DATA_NET1("Data Network 1"),
+    SERVER_DATA_NET2("Data Network 2"),
+    SERVER_LOCATION("Location"),
+    SERVER_OWNER("Owner"),
+    BUTTON_ADD_SERVER("Add Server"),
+    BUTTON_CLEAR_FORM("Clear Form");
+
+    private final String string;
+
+    private ServerStrings(String string) {
+        this.string = string;
+    }
+
+    public String getString() {
+        return this.string;
+    }
+}

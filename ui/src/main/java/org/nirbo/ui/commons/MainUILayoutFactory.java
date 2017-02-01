@@ -2,7 +2,7 @@ package org.nirbo.ui.commons;
 
 import com.vaadin.ui.*;
 import com.vaadin.ui.themes.ValoTheme;
-import org.nirbo.ui.serverstab.ServersTabUILayoutFactory;
+import org.nirbo.ui.servertab.ServersTabUILayoutFactory;
 import org.nirbo.utils.CommonStrings;
 import org.springframework.beans.factory.annotation.Autowired;
 

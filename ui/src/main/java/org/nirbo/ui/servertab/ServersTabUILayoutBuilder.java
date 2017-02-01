@@ -1,4 +1,4 @@
-package org.nirbo.ui.serverstab;
+package org.nirbo.ui.servertab;
 
 import com.vaadin.ui.Layout;
 

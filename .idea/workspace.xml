@@ -2,184 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34686f9f-7e02-45eb-add0-39895c2a8455" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_jsr250_api_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_el_el_api_2_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_enterprise_cdi_api_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_6_0_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_jta_1_1_spec_1_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_2_6_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_3_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_interceptor_jboss_interceptors_api_1_1_spec_1_0_0_Beta1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_1_4_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_2_9_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_6_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_2_9_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_6_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_2_9_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_6_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_4_3_6_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_6_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_6_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_6_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/src/main/java/org/nirbo/repository/server/ServerRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/src/main/resources/application.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/src/main/java/org/nirbo/service/addserver/AddServerService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/src/main/java/org/nirbo/service/addserver/AddServerServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/serverstab/ServersTabUILayoutBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/serverstab/ServersTabUILayoutFactory.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_nirbo_model_entity_Server_0_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_1_4_3_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE.war" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/VAADIN/themes/monitorTheme/addons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/VAADIN/themes/monitorTheme/monitorTheme.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/VAADIN/themes/monitorTheme/styles.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/VAADIN/themes/monitorTheme/styles.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/classes/VAADIN/themes/monitorTheme/addons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/classes/VAADIN/themes/monitorTheme/monitorTheme.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/classes/VAADIN/themes/monitorTheme/styles.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/classes/VAADIN/themes/monitorTheme/styles.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/classes/org/nirbo/launcher/SpringBootApp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/accessors-smart-1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/antlr-2.7.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/asm-5.0.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/aspectjweaver-1.8.9.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/assertj-core-2.5.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/classmate-1.3.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/dom4j-1.6.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/flute-1.3.0.gg2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/guava-r05.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/hamcrest-core-1.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/hamcrest-library-1.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/hibernate-commons-annotations-5.0.1.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/hibernate-core-5.0.11.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/hibernate-entitymanager-5.0.11.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/hibernate-validator-5.2.4.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/jackson-annotations-2.8.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/jackson-core-2.8.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/jackson-databind-2.8.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/jandex-2.0.0.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/javassist-3.20.0-GA.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/javax.transaction-api-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/jboss-logging-3.3.0.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/jcl-over-slf4j-1.7.22.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/json-20140107.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/json-path-2.2.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/json-smart-2.2.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/jsonassert-1.3.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/jsoup-1.8.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/jul-to-slf4j-1.7.22.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/junit-4.12.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/log4j-over-slf4j-1.7.22.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/logback-classic-1.1.8.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/logback-core-1.1.8.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/mockito-core-1.10.19.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/objenesis-2.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/sac-1.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/slf4j-api-1.7.22.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/snakeyaml-1.17.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/spring-aop-4.3.5.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/spring-aspects-4.3.5.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/spring-beans-4.3.5.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/spring-boot-1.4.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/spring-boot-autoconfigure-1.4.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/spring-boot-starter-1.4.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/spring-boot-starter-aop-1.4.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/spring-boot-starter-data-jpa-1.4.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/spring-boot-starter-jdbc-1.4.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/spring-boot-starter-logging-1.4.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/spring-boot-starter-test-1.4.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/spring-boot-starter-web-1.4.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/spring-boot-test-1.4.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/spring-boot-test-autoconfigure-1.4.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/spring-context-4.3.5.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/spring-core-4.3.5.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/spring-data-commons-1.12.6.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/spring-data-jpa-1.10.6.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/spring-expression-4.3.5.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/spring-jdbc-4.3.5.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/spring-orm-4.3.5.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/spring-test-4.3.5.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/spring-tx-4.3.5.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/spring-web-4.3.5.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/spring-webmvc-4.3.5.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/tomcat-jdbc-8.5.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/tomcat-juli-8.5.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/ui-0.0.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/utils-0.0.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/vaadin-client-compiled-7.7.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/vaadin-sass-compiler-0.9.13.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/vaadin-server-7.7.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/vaadin-shared-7.7.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/vaadin-spring-1.1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/vaadin-spring-boot-1.1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/vaadin-spring-boot-starter-1.1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/vaadin-themes-7.7.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/validation-api-1.1.0.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE/WEB-INF/lib/xml-apis-1.4.01.jar" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_8.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_9.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_8.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_9.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_6.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_6.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_6.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_11.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_11.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_11.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_jdbc_8_5_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_jdbc_8_5_11.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_juli_8_5_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_juli_8_5_11.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_1_4_3_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_1_4_4_RELEASE.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_4_3_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_4_4_RELEASE.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_4_3_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_4_4_RELEASE.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_1_4_3_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_1_4_4_RELEASE.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_1_4_3_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_1_4_4_RELEASE.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_1_4_3_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_1_4_4_RELEASE.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_4_3_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_4_4_RELEASE.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_1_4_3_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_1_4_4_RELEASE.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_1_4_3_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_1_4_4_RELEASE.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_1_4_3_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_1_4_4_RELEASE.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_1_4_3_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_1_4_4_RELEASE.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_12_6_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_12_7_RELEASE.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_1_10_6_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_1_10_7_RELEASE.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_4_3_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_4_3_6_RELEASE.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_6_RELEASE.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_4_3_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_4_2_9_RELEASE.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_6_RELEASE.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_2_9_RELEASE.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_6_RELEASE.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_6_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/target/database-0.0.1.jar" afterPath="$PROJECT_DIR$/database/target/database-0.0.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_40.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/servertab/AddServerWindowLayoutBuilder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/servertab/AddServerWindowLayoutFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/utils/src/main/java/org/nirbo/utils/ServerStrings.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/serverstab/ServersTabUILayoutBuilder.java" afterPath="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/servertab/ServersTabUILayoutBuilder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/serverstab/ServersTabUILayoutFactory.java" afterPath="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/servertab/ServersTabUILayoutFactory.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/target/model-0.0.1.jar" afterPath="$PROJECT_DIR$/model/target/model-0.0.1.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/target/service-0.0.1.jar" afterPath="$PROJECT_DIR$/service/target/service-0.0.1.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/target/classes/org/nirbo/ui/commons/MainUI.class" afterPath="$PROJECT_DIR$/ui/target/classes/org/nirbo/ui/commons/MainUI.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/target/ui-0.0.1.jar" afterPath="$PROJECT_DIR$/ui/target/ui-0.0.1.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/target/classes/org/nirbo/utils/CommonStrings.class" afterPath="$PROJECT_DIR$/utils/target/classes/org/nirbo/utils/CommonStrings.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/target/utils-0.0.1.jar" afterPath="$PROJECT_DIR$/utils/target/utils-0.0.1.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/classes/org/nirbo/launcher/SpringBootApp.class" afterPath="$PROJECT_DIR$/web/target/classes/org/nirbo/launcher/SpringBootApp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE.war.original" afterPath="$PROJECT_DIR$/web/target/web-1.4.3.RELEASE.war.original" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/web_war.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/web_war.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/web_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/web_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/database.iml" afterPath="$PROJECT_DIR$/database/database.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/pom.xml" afterPath="$PROJECT_DIR$/database/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/database/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/model.iml" afterPath="$PROJECT_DIR$/model/model.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/pom.xml" afterPath="$PROJECT_DIR$/model/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/org/nirbo/model/entity/Server.java" afterPath="$PROJECT_DIR$/model/src/main/java/org/nirbo/model/entity/Server.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/pom.xml" afterPath="$PROJECT_DIR$/service/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/service.iml" afterPath="$PROJECT_DIR$/service/service.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/commons/MainUI.java" afterPath="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/commons/MainUI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/commons/MainUIComponentBuilder.java" afterPath="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/commons/MainUIComponentBuilder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/pom.xml" afterPath="$PROJECT_DIR$/ui/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/commons/MainUILayoutFactory.java" afterPath="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/commons/MainUILayoutFactory.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/ui/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/ui/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/ui.iml" afterPath="$PROJECT_DIR$/ui/ui.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/src/main/java/org/nirbo/utils/CommonStrings.java" afterPath="$PROJECT_DIR$/utils/src/main/java/org/nirbo/utils/CommonStrings.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/pom.xml" afterPath="$PROJECT_DIR$/web/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/java/org/nirbo/launcher/SpringBootApp.java" afterPath="$PROJECT_DIR$/web/src/main/java/org/nirbo/launcher/SpringBootApp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/utils/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/utils/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/web/target/maven-archiver/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/web.iml" afterPath="$PROJECT_DIR$/web/web.iml" />
     </list>
@@ -207,11 +49,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainUI.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainUI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/commons/MainUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="15" selection-end-column="52" />
+            <state relative-caret-position="450">
+              <caret line="30" column="81" lean-forward="true" selection-start-line="30" selection-start-column="81" selection-end-line="30" selection-end-column="81" />
               <folding>
                 <element signature="e#498#499#0" expanded="true" />
                 <element signature="e#530#531#0" expanded="true" />
@@ -220,27 +62,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainUILayoutFactory.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/commons/MainUILayoutFactory.java">
+      <file leaf-file-name="ServersTabUILayoutFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/servertab/ServersTabUILayoutFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="89" lean-forward="false" selection-start-line="24" selection-start-column="89" selection-end-line="24" selection-end-column="89" />
+            <state relative-caret-position="414">
+              <caret line="31" column="42" lean-forward="true" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
               <folding>
-                <element signature="e#1698#1699#0" expanded="true" />
-                <element signature="e#1761#1762#0" expanded="true" />
+                <element signature="e#1512#1513#0" expanded="true" />
+                <element signature="e#1581#1582#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServersTabUILayoutFactory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/serverstab/ServersTabUILayoutFactory.java">
+      <file leaf-file-name="AddServerWindowLayoutFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/servertab/AddServerWindowLayoutFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+            <state relative-caret-position="180">
+              <caret line="80" column="70" lean-forward="false" selection-start-line="80" selection-start-column="70" selection-end-line="80" selection-end-column="70" />
               <folding>
-                <element signature="e#1052#1053#0" expanded="true" />
-                <element signature="e#1121#1122#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#5069#5070#0" expanded="true" />
+                <element signature="e#5148#5149#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -250,7 +93,7 @@
         <entry file="file://$PROJECT_DIR$/model/src/main/java/org/nirbo/model/entity/Server.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -259,12 +102,9 @@
       <file leaf-file-name="SpringBootApp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/src/main/java/org/nirbo/launcher/SpringBootApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-              <folding>
-                <element signature="e#1370#1371#0" expanded="true" />
-                <element signature="e#1434#1435#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="126">
+              <caret line="17" column="2" lean-forward="false" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -274,8 +114,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -325,15 +166,20 @@
         <option value="$PROJECT_DIR$/service/src/main/java/org/nirbo/service/addserver/AddServerService.java" />
         <option value="$PROJECT_DIR$/service/pom.xml" />
         <option value="$PROJECT_DIR$/service/src/main/java/org/nirbo/service/addserver/AddServerServiceImpl.java" />
-        <option value="$PROJECT_DIR$/web/src/main/java/org/nirbo/launcher/SpringBootApp.java" />
         <option value="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/commons/MainUIComponentBuilder.java" />
-        <option value="$PROJECT_DIR$/utils/src/main/java/org/nirbo/utils/CommonStrings.java" />
         <option value="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/serverstab/ServersTabUIComponentBuilder.java" />
-        <option value="$PROJECT_DIR$/ui/pom.xml" />
         <option value="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/commons/MainUI.java" />
         <option value="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/serverstab/ServersTabUILayoutBuilder.java" />
         <option value="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/serverstab/ServersTabUILayoutFactory.java" />
         <option value="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/commons/MainUILayoutFactory.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/org/nirbo/launcher/SpringBootApp.java" />
+        <option value="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/servertab/AddServerWindow.java" />
+        <option value="$PROJECT_DIR$/ui/pom.xml" />
+        <option value="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/servertab/AddServerWindowLayoutBuilder.java" />
+        <option value="$PROJECT_DIR$/utils/src/main/java/org/nirbo/utils/CommonStrings.java" />
+        <option value="$PROJECT_DIR$/utils/src/main/java/org/nirbo/utils/ServerStrings.java" />
+        <option value="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/servertab/ServersTabUILayoutFactory.java" />
+        <option value="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/servertab/AddServerWindowLayoutFactory.java" />
       </list>
     </option>
   </component>
@@ -379,7 +225,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -468,6 +313,50 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="monitor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="monitor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="monitor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="monitor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="ui" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -502,7 +391,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="serverstab" />
+              <option name="myItemId" value="servertab" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -700,6 +589,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
@@ -712,7 +602,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -1235,12 +1125,14 @@
       <workItem from="1485415232289" duration="62000" />
       <workItem from="1485415520559" duration="7537000" />
       <workItem from="1485781759717" duration="6678000" />
-      <workItem from="1485861881406" duration="9807000" />
+      <workItem from="1485861881406" duration="10883000" />
+      <workItem from="1485936761370" duration="24000" />
+      <workItem from="1485936817850" duration="9505000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71442000" />
+    <option name="totallyTimeSpent" value="82047000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1269,11 +1161,10 @@
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23774509" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24387255" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18948655" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
@@ -1284,6 +1175,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1306,15 +1198,15 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/web/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ui/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="42" lean-forward="false" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+        <state relative-caret-position="408">
+          <caret line="24" column="21" lean-forward="false" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -1323,10 +1215,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="e#1370#1371#0" expanded="true" />
-            <element signature="e#1434#1435#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1360,47 +1249,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="e#1370#1371#0" expanded="true" />
-            <element signature="e#1434#1435#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/commons/MainUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#498#499#0" expanded="true" />
-            <element signature="e#530#531#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="21" lean-forward="false" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/org/nirbo/launcher/SpringBootApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="e#1370#1371#0" expanded="true" />
-            <element signature="e#1434#1435#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1515,14 +1364,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/ServerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="30" lean-forward="false" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/ServerService.java" />
     <entry file="file://$PROJECT_DIR$/service/src/main/java/org/nirbo/service/addserver/AddServerServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -1551,7 +1393,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" column="31" lean-forward="false" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1579,38 +1420,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/org/nirbo/launcher/SpringBootApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <element signature="e#1370#1371#0" expanded="true" />
-            <element signature="e#1434#1435#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/src/main/java/org/nirbo/model/entity/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/src/main/java/org/nirbo/utils/CommonStrings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-          <folding>
-            <element signature="e#237#238#0" expanded="false" />
-            <element signature="e#273#274#0" expanded="false" />
-            <element signature="e#306#307#0" expanded="false" />
-            <element signature="e#340#341#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/commons/MainUIComponentBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -1619,26 +1428,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ui/pom.xml">
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/org/nirbo/launcher/SpringBootApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="34" column="21" lean-forward="false" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+        <state relative-caret-position="126">
+          <caret line="17" column="2" lean-forward="false" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/commons/MainUI.java">
+    <entry file="file://$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/servertab/AddServerWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="15" selection-end-column="52" />
-          <folding>
-            <element signature="e#498#499#0" expanded="true" />
-            <element signature="e#530#531#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="108">
+          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/serverstab/ServersTabUILayoutBuilder.java">
+    <entry file="file://$PROJECT_DIR$/ui/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="36" column="29" lean-forward="false" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/servertab/ServersTabUILayoutBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="36" lean-forward="true" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
@@ -1646,24 +1460,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/serverstab/ServersTabUILayoutFactory.java">
+    <entry file="file://$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/servertab/AddServerWindowLayoutBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-          <folding>
-            <element signature="e#1052#1053#0" expanded="true" />
-            <element signature="e#1121#1122#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="126">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/commons/MainUILayoutFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="89" lean-forward="false" selection-start-line="24" selection-start-column="89" selection-end-line="24" selection-end-column="89" />
+        <state relative-caret-position="810">
+          <caret line="49" column="21" lean-forward="false" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
           <folding>
-            <element signature="e#1698#1699#0" expanded="true" />
-            <element signature="e#1761#1762#0" expanded="true" />
+            <element signature="e#1697#1698#0" expanded="false" />
+            <element signature="e#1760#1761#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/org/nirbo/utils/CommonStrings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="36" lean-forward="false" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+          <folding>
+            <element signature="e#207#208#0" expanded="true" />
+            <element signature="e#243#244#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/org/nirbo/utils/ServerStrings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="36" lean-forward="true" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+          <folding>
+            <element signature="e#474#475#0" expanded="true" />
+            <element signature="e#510#511#0" expanded="true" />
+            <element signature="e#543#544#0" expanded="true" />
+            <element signature="e#577#578#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/src/main/java/org/nirbo/model/entity/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/servertab/ServersTabUILayoutFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="31" column="42" lean-forward="true" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
+          <folding>
+            <element signature="e#1512#1513#0" expanded="true" />
+            <element signature="e#1581#1582#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/servertab/AddServerWindowLayoutFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="80" column="70" lean-forward="false" selection-start-line="80" selection-start-column="70" selection-end-line="80" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5069#5070#0" expanded="true" />
+            <element signature="e#5148#5149#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/commons/MainUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="81" lean-forward="true" selection-start-line="30" selection-start-column="81" selection-end-line="30" selection-end-column="81" />
+          <folding>
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#530#531#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1733,7 +1610,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>ui</last-edited>
+          <last-edited>Web|web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1757,7 +1634,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: org.nirbo.model.entity:Server:0.0.1</last-edited>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -1,25 +1,29 @@
-package org.nirbo.ui.serverstab;
+package org.nirbo.ui.servertab;
 
-import com.vaadin.ui.Alignment;
-import com.vaadin.ui.Button;
-import com.vaadin.ui.Layout;
-import com.vaadin.ui.VerticalLayout;
+import com.vaadin.ui.*;
 import com.vaadin.ui.themes.ValoTheme;
+import org.nirbo.ui.commons.MainUI;
 import org.nirbo.utils.CommonStrings;
+import org.nirbo.utils.ServerStrings;
+import org.springframework.beans.factory.annotation.Autowired;
 
 @org.springframework.stereotype.Component
 public class ServersTabUILayoutFactory implements ServersTabUILayoutBuilder {
 
+    @Autowired
+    private AddServerWindowLayoutFactory addServerWindowLayoutFactory;
+
     private Button addServerButton;
 
-    private class ServersTabUILayout extends VerticalLayout {
+    private class ServersTabUILayout extends VerticalLayout implements Button.ClickListener {
         public ServersTabUILayout init() {
             this.setMargin(true);
             this.setSpacing(true);
 
             addServerButton = new Button();
-            addServerButton.setCaption(CommonStrings.ADD_SERVER.getString());
+            addServerButton.setCaption(ServerStrings.ADD_SERVER.getString());
             addServerButton.setStyleName(ValoTheme.BUTTON_FRIENDLY);
+            addServerButton.addClickListener(this);
 
             return this;
         }
@@ -29,6 +33,12 @@ public class ServersTabUILayoutFactory implements ServersTabUILayoutBuilder {
             setComponentAlignment(addServerButton, Alignment.TOP_LEFT);
 
             return this;
+        }
+
+        public void buttonClick(Button.ClickEvent event) {
+            if (event.getSource() == addServerButton) {
+                MainUI.getCurrent().addWindow((Window) addServerWindowLayoutFactory.createAddServerWindowLayout());
+            }
         }
     }
 

@@ -89,6 +89,10 @@
           <element id="archive" name="utils-0.0.1.jar">
             <element id="module-output" name="utils" />
           </element>
+          <element id="archive" name="model-0.0.1.jar">
+            <element id="module-output" name="model" />
+          </element>
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.40" />
         </element>
       </element>
       <element id="directory" name="META-INF">
