@@ -5,6 +5,7 @@ import com.vaadin.data.fieldgroup.FieldGroup;
 import com.vaadin.ui.*;
 import com.vaadin.ui.themes.ValoTheme;
 import org.nirbo.model.entity.Server;
+import org.nirbo.utils.NotificationStrings;
 import org.nirbo.utils.ServerStrings;
 
 @org.springframework.stereotype.Component
@@ -47,6 +48,11 @@ public class AddServerWindowLayoutFactory implements AddServerWindowLayoutBuilde
             serverMgmtIP.setNullRepresentation("");
             serverDataNet1.setNullRepresentation("");
             serverDataNet2.setNullRepresentation("");
+
+            serverName.setMaxLength(29);
+            serverMgmtIP.setMaxLength(15);
+            serverDataNet1.setMaxLength(15);
+            serverDataNet2.setMaxLength(15);
 
             return this;
         }
@@ -112,7 +118,11 @@ public class AddServerWindowLayoutFactory implements AddServerWindowLayoutBuilde
             try {
                 fieldGroup.commit();
             } catch (FieldGroup.CommitException e) {
-                e.printStackTrace();
+                Notification.show(NotificationStrings.NOTIFICATION_ERROR.getString(),
+                        NotificationStrings.NOTIFICATION_EMPTY_FIELDS_MESSAGE.getString(),
+                        Notification.Type.ERROR_MESSAGE);
+
+                return;
             }
         }
 

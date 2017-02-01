@@ -1,32 +1,40 @@
 package org.nirbo.model.entity;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 @Entity
 @Table(name="SERVER")
 public class Server {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy=GenerationType.AUTO)
     @Column(name="id")
     private Long id;
 
     @Column(name="server_location")
+    @NotNull
     private String serverLocation;
 
     @Column(name="server_name")
+    @NotNull
     private String serverName;
 
     @Column(name="server_mgmt_ip")
+    @NotNull
     private String serverMgmtIP;
 
     @Column(name="server_data_net1")
+    @NotNull
     private String serverDataNet1;
 
     @Column(name="server_data_net2")
+    @NotNull
     private String serverDataNet2;
 
     @Column(name="server_owner")
+    @NotNull
     private String serverOwner;
 
     public Server() {

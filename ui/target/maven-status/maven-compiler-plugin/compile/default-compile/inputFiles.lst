@@ -1,5 +1,7 @@
+/home/nir/dev/monitor/ui/src/main/java/org/nirbo/ui/servertab/AddServerWindowLayoutFactory.java
+/home/nir/dev/monitor/ui/src/main/java/org/nirbo/ui/servertab/AddServerWindowLayoutBuilder.java
+/home/nir/dev/monitor/ui/src/main/java/org/nirbo/ui/servertab/ServersTabUILayoutFactory.java
 /home/nir/dev/monitor/ui/src/main/java/org/nirbo/ui/commons/MainUI.java
 /home/nir/dev/monitor/ui/src/main/java/org/nirbo/ui/commons/MainUILayoutFactory.java
-/home/nir/dev/monitor/ui/src/main/java/org/nirbo/ui/serverstab/ServersTabUILayoutBuilder.java
 /home/nir/dev/monitor/ui/src/main/java/org/nirbo/ui/commons/MainUIComponentBuilder.java
-/home/nir/dev/monitor/ui/src/main/java/org/nirbo/ui/serverstab/ServersTabUILayoutFactory.java
+/home/nir/dev/monitor/ui/src/main/java/org/nirbo/ui/servertab/ServersTabUILayoutBuilder.java
