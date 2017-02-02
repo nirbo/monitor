@@ -2,8 +2,9 @@ package org.nirbo.utils;
 
 public enum CommonStrings {
 
-    MAIN_TABSHEET_SERVERS("Servers"),
-    MAIN_TABSHEET_TICKETS("Tickets");
+    SERVERS("Servers"),
+    TICKETS("Tickets"),
+    ADD_SERVER("Add Server"),;
 
     private final String string;
 

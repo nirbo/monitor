@@ -1,17 +1,16 @@
-package org.nirbo.ui.servertab;
+package org.nirbo.ui.servers;
 
 import com.vaadin.ui.*;
 import com.vaadin.ui.themes.ValoTheme;
 import org.nirbo.ui.commons.MainUI;
-import org.nirbo.utils.CommonStrings;
 import org.nirbo.utils.ServerStrings;
 import org.springframework.beans.factory.annotation.Autowired;
 
 @org.springframework.stereotype.Component
 public class ServersTabUILayoutFactory implements ServersTabUILayoutBuilder {
 
-    @Autowired
-    private AddServerWindowLayoutFactory addServerWindowLayoutFactory;
+//    @Autowired
+//    private AddServerLayoutFactory addServerWindowLayoutFactory;
 
     private Button addServerButton;
 
@@ -37,7 +36,7 @@ public class ServersTabUILayoutFactory implements ServersTabUILayoutBuilder {
 
         public void buttonClick(Button.ClickEvent event) {
             if (event.getSource() == addServerButton) {
-                MainUI.getCurrent().addWindow((Window) addServerWindowLayoutFactory.createAddServerWindowLayout());
+//                MainUI.getCurrent().addWindow((Window) addServerWindowLayoutFactory.createComponent());
             }
         }
     }

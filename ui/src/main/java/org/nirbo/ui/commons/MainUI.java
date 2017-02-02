@@ -4,16 +4,33 @@ import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.Title;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.spring.annotation.SpringUI;
-import com.vaadin.ui.*;
+import com.vaadin.spring.navigator.SpringViewProvider;
+import com.vaadin.ui.HorizontalLayout;
+import com.vaadin.ui.Layout;
+import com.vaadin.ui.Panel;
+import com.vaadin.ui.UI;
+import org.nirbo.ui.navigator.AppNavigator;
+import org.nirbo.ui.servers.AddServerLayoutFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
 
-@SpringUI
+@SpringUI(path=MainUI.NAME)
 @Title("Monitor App")
 @Theme("monitorTheme")
 public class MainUI extends UI {
 
+    public static final String NAME = "/";
+
     @Autowired
-    private MainUILayoutFactory mainUILayoutFactory;
+    private ApplicationContext applicationContext;
+
+    @Autowired
+    private MainMenuLayoutFactory mainMenuLayoutFactory;
+
+    @Autowired
+    private SpringViewProvider viewProvider;
+
+    private Panel contentPanel;
 
     @Override
     protected void init(VaadinRequest request) {
@@ -21,20 +38,34 @@ public class MainUI extends UI {
     }
 
     private void initMainLayout() {
-        VerticalLayout rootLayout = new VerticalLayout();
-        Panel mainContentPanel = new Panel();
-
+        HorizontalLayout rootLayout = new HorizontalLayout();
         rootLayout.setSizeFull();
+        rootLayout.setSpacing(true);
         rootLayout.setMargin(true);
 
-        mainContentPanel.setSizeFull();
-        mainContentPanel.setContent(mainUILayoutFactory.createLayoutComponent());
+        Panel menuPanel = new Panel();
+        menuPanel.setSizeFull();
 
-        rootLayout.addComponent(mainContentPanel);
-        rootLayout.setComponentAlignment(mainContentPanel, Alignment.TOP_LEFT);
-        rootLayout.setExpandRatio(mainContentPanel, 1);
+        contentPanel = new Panel();
+        contentPanel.setSizeFull();
 
+        Layout menuLayout = mainMenuLayoutFactory.createComponent();
+
+        rootLayout.addComponent(menuPanel);
+        rootLayout.addComponent(contentPanel);
+        rootLayout.setExpandRatio(menuPanel, 0.15f);
+        rootLayout.setExpandRatio(contentPanel, 0.85f);
+
+        initNavigator();
+
+        menuPanel.setContent(menuLayout);
         setContent(rootLayout);
     }
 
+    private void initNavigator() {
+        AppNavigator navigator = new AppNavigator(this, contentPanel);
+        applicationContext.getAutowireCapableBeanFactory().autowireBean(navigator);
+        navigator.addProvider(viewProvider);
+        navigator.navigateTo(AddServerLayoutFactory.NAME);
+    }
 }
