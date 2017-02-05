@@ -4,15 +4,19 @@ import com.vaadin.data.fieldgroup.BeanFieldGroup;
 import com.vaadin.data.fieldgroup.FieldGroup;
 import com.vaadin.navigator.View;
 import com.vaadin.navigator.ViewChangeListener;
+import com.vaadin.shared.ui.label.ContentMode;
 import com.vaadin.spring.annotation.SpringView;
 import com.vaadin.ui.*;
 import com.vaadin.ui.themes.ValoTheme;
 import org.nirbo.model.entity.Server;
 import org.nirbo.ui.commons.MainUI;
 import org.nirbo.ui.commons.UILayoutBuilder;
+import org.nirbo.utils.CommonStrings;
 import org.nirbo.utils.NotificationStrings;
 import org.nirbo.utils.ServerStrings;
 import org.springframework.stereotype.*;
+
+import static javax.swing.text.html.HTML.Tag.H1;
 
 @SpringView(name=AddServerLayoutFactory.NAME, ui=MainUI.class)
 public class AddServerLayoutFactory extends VerticalLayout implements View, Button.ClickListener {
@@ -37,6 +41,9 @@ public class AddServerLayoutFactory extends VerticalLayout implements View, Butt
     }
 
     private void createLayout() {
+        this.setMargin(true);
+        this.setSizeFull();
+
         fieldGroup = new BeanFieldGroup<Server>(Server.class);
         server = new Server();
 
@@ -61,9 +68,15 @@ public class AddServerLayoutFactory extends VerticalLayout implements View, Butt
         serverDataNet2.setNullRepresentation("");
 
         serverName.setMaxLength(29);
+        serverName.setWidth("25%");
         serverMgmtIP.setMaxLength(15);
+        serverMgmtIP.setWidth("25%");
         serverDataNet1.setMaxLength(15);
+        serverDataNet1.setWidth("25%");
         serverDataNet2.setMaxLength(15);
+        serverDataNet2.setWidth("25%");
+        serverLocation.setWidth("25%");
+        serverOwner.setWidth("25%");
 
         fieldGroup.bindMemberFields(this);
         fieldGroup.setItemDataSource(server);
@@ -71,6 +84,9 @@ public class AddServerLayoutFactory extends VerticalLayout implements View, Butt
         VerticalLayout addServerLayout = new VerticalLayout();
         addServerLayout.setMargin(true);
         addServerLayout.setSpacing(true);
+
+        Label addServerTitle = new Label("<H1><CENTER><U>" + CommonStrings.ADD_SERVER.getString() + "</U></CENTER></H1>", ContentMode.HTML);
+        addServerLayout.addComponent(addServerTitle);
 
         addServerLayout.addComponent(serverName);
         addServerLayout.addComponent(serverMgmtIP);
@@ -98,6 +114,8 @@ public class AddServerLayoutFactory extends VerticalLayout implements View, Butt
         buttonsLayout.setComponentAlignment(clearButton, Alignment.MIDDLE_RIGHT);
 
         addServerLayout.addComponent(buttonsLayout);
+        addServerLayout.setComponentAlignment(buttonsLayout, Alignment.MIDDLE_CENTER);
+        addComponent(addServerLayout);
     }
 
     public void buttonClick(Button.ClickEvent event) {

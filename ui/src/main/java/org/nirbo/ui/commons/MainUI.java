@@ -5,10 +5,7 @@ import com.vaadin.annotations.Title;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.spring.annotation.SpringUI;
 import com.vaadin.spring.navigator.SpringViewProvider;
-import com.vaadin.ui.HorizontalLayout;
-import com.vaadin.ui.Layout;
-import com.vaadin.ui.Panel;
-import com.vaadin.ui.UI;
+import com.vaadin.ui.*;
 import org.nirbo.ui.navigator.AppNavigator;
 import org.nirbo.ui.servers.AddServerLayoutFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -49,14 +46,14 @@ public class MainUI extends UI {
         contentPanel = new Panel();
         contentPanel.setSizeFull();
 
-        Layout menuLayout = mainMenuLayoutFactory.createComponent();
+        initNavigator();
+
+        VerticalLayout menuLayout = (VerticalLayout) mainMenuLayoutFactory.createComponent();
 
         rootLayout.addComponent(menuPanel);
         rootLayout.addComponent(contentPanel);
         rootLayout.setExpandRatio(menuPanel, 0.15f);
         rootLayout.setExpandRatio(contentPanel, 0.85f);
-
-        initNavigator();
 
         menuPanel.setContent(menuLayout);
         setContent(rootLayout);
