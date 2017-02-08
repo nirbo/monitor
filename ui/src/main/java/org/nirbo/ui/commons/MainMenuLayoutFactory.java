@@ -28,13 +28,16 @@ public class MainMenuLayoutFactory implements UILayoutBuilder {
 
             mainMenu.addItem(CommonStrings.SERVERS.getString());
             mainMenu.addItem(CommonStrings.ADD_SERVER.getString());
+            mainMenu.addItem(CommonStrings.SHOW_SERVERS.getString());
             mainMenu.addItem(CommonStrings.TICKETS.getString());
 
             mainMenu.setChildrenAllowed(CommonStrings.SERVERS.getString(), true);
             mainMenu.setChildrenAllowed(CommonStrings.ADD_SERVER.getString(), false);
+            mainMenu.setChildrenAllowed(CommonStrings.SHOW_SERVERS.getString(), false);
             mainMenu.setChildrenAllowed(CommonStrings.TICKETS.getString(), true);
 
             mainMenu.setParent(CommonStrings.ADD_SERVER.getString(), CommonStrings.SERVERS.getString());
+            mainMenu.setParent(CommonStrings.SHOW_SERVERS.getString(), CommonStrings.SERVERS.getString());
             mainMenu.expandItem(CommonStrings.SERVERS.getString());
 
             addComponent(mainMenu);

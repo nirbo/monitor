@@ -11,6 +11,7 @@ import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
 import org.nirbo.ui.navigator.AppNavigator;
 import org.nirbo.ui.servers.AddServerLayoutFactory;
+import org.nirbo.ui.servers.ShowServersLayoutFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 
@@ -66,6 +67,6 @@ public class MainUI extends UI {
         AppNavigator navigator = new AppNavigator(this, contentPanel);
         applicationContext.getAutowireCapableBeanFactory().autowireBean(navigator);
         navigator.addProvider(viewProvider);
-        navigator.navigateTo(AddServerLayoutFactory.NAME);
+        navigator.navigateTo(ShowServersLayoutFactory.NAME);
     }
 }

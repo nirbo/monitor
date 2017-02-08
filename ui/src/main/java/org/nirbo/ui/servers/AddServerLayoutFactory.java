@@ -4,6 +4,8 @@ import com.vaadin.data.fieldgroup.BeanFieldGroup;
 import com.vaadin.data.fieldgroup.FieldGroup;
 import com.vaadin.navigator.View;
 import com.vaadin.navigator.ViewChangeListener;
+import com.vaadin.server.Page;
+import com.vaadin.shared.Position;
 import com.vaadin.shared.ui.label.ContentMode;
 import com.vaadin.spring.annotation.SpringComponent;
 import com.vaadin.spring.annotation.SpringView;
@@ -13,6 +15,7 @@ import org.nirbo.model.entity.Server;
 import org.nirbo.service.addserver.AddServerService;
 import org.nirbo.ui.commons.MainUI;
 import org.nirbo.utils.CommonStrings;
+import org.nirbo.utils.LocationStrings;
 import org.nirbo.utils.NotificationStrings;
 import org.nirbo.utils.ServerStrings;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,12 +26,15 @@ public class AddServerLayoutFactory extends VerticalLayout implements View, Butt
 
     public static final String NAME = "addserver";
 
+    @Autowired
+    private AddServerService addServerService;
+
     private TextField serverName;
     private TextField serverMgmtIP;
     private TextField serverDataNet1;
     private TextField serverDataNet2;
+    private TextField serverOwner;
     private ComboBox serverLocation;
-    private ComboBox serverOwner;
     private Button saveButton;
     private Button clearButton;
 
@@ -51,8 +57,8 @@ public class AddServerLayoutFactory extends VerticalLayout implements View, Butt
         serverMgmtIP = new TextField(ServerStrings.SERVER_MGMT_IP.getString());
         serverDataNet1 = new TextField(ServerStrings.SERVER_DATA_NET1.getString());
         serverDataNet2 = new TextField(ServerStrings.SERVER_DATA_NET2.getString());
+        serverOwner = new TextField(ServerStrings.SERVER_OWNER.getString());
         serverLocation = new ComboBox(ServerStrings.SERVER_LOCATION.getString());
-        serverOwner = new ComboBox(ServerStrings.SERVER_OWNER.getString());
 
         saveButton = new Button(ServerStrings.ADD_SERVER.getString());
         clearButton = new Button(ServerStrings.BUTTON_CLEAR_FORM.getString());
@@ -60,24 +66,27 @@ public class AddServerLayoutFactory extends VerticalLayout implements View, Butt
         saveButton.addClickListener(this);
         clearButton.addClickListener(this);
 
-//          TODO: ADD DB QUERY AND POPULATE THE TWO COMBO BOXES (LOCATION & OWNER)
+        serverLocation.addItem(LocationStrings.DURHAM.getString());
+        serverLocation.addItem(LocationStrings.HERZELIYA.getString());
 
         serverName.setNullRepresentation("");
         serverMgmtIP.setNullRepresentation("");
         serverDataNet1.setNullRepresentation("");
         serverDataNet2.setNullRepresentation("");
+        serverOwner.setNullRepresentation("");
 
         serverName.setMaxLength(29);
         serverMgmtIP.setMaxLength(15);
         serverDataNet1.setMaxLength(15);
         serverDataNet2.setMaxLength(15);
+        serverOwner.setMaxLength(29);
 
         serverName.setWidth("25%");
         serverMgmtIP.setWidth("25%");
         serverDataNet1.setWidth("25%");
         serverDataNet2.setWidth("25%");
-        serverLocation.setWidth("25%");
         serverOwner.setWidth("25%");
+        serverLocation.setWidth("25%");
 
         fieldGroup.bindMemberFields(this);
         fieldGroup.setItemDataSource(server);
@@ -93,15 +102,15 @@ public class AddServerLayoutFactory extends VerticalLayout implements View, Butt
         addServerLayout.addComponent(serverMgmtIP);
         addServerLayout.addComponent(serverDataNet1);
         addServerLayout.addComponent(serverDataNet2);
-        addServerLayout.addComponent(serverLocation);
         addServerLayout.addComponent(serverOwner);
+        addServerLayout.addComponent(serverLocation);
 
         addServerLayout.setComponentAlignment(serverName, Alignment.MIDDLE_CENTER);
         addServerLayout.setComponentAlignment(serverMgmtIP, Alignment.MIDDLE_CENTER);
         addServerLayout.setComponentAlignment(serverDataNet1, Alignment.MIDDLE_CENTER);
         addServerLayout.setComponentAlignment(serverDataNet2, Alignment.MIDDLE_CENTER);
-        addServerLayout.setComponentAlignment(serverLocation, Alignment.MIDDLE_CENTER);
         addServerLayout.setComponentAlignment(serverOwner, Alignment.MIDDLE_CENTER);
+        addServerLayout.setComponentAlignment(serverLocation, Alignment.MIDDLE_CENTER);
 
         saveButton.setStyleName(ValoTheme.BUTTON_PRIMARY);
         clearButton.setStyleName(ValoTheme.BUTTON_DANGER);
@@ -129,8 +138,13 @@ public class AddServerLayoutFactory extends VerticalLayout implements View, Butt
         addServerService.saveServer(server);
         clearFields();
 
-        Notification.show(NotificationStrings.NOTIFICATION_SERVER_ADDED.getString(),
-                NotificationStrings.NOTIFICATION_SUCCESS.getString(), Notification.Type.HUMANIZED_MESSAGE);
+//  TODO: CREATE A GENERIC, MULTI-USE STATIC METHOD WITH DIFFERENT NOTIFICATION OPTIONS ACCORDING TO PASSED VARIABLES
+        Notification successNotification = new Notification(NotificationStrings.NOTIFICATION_SUCCESS.getString(),
+                                                            NotificationStrings.NOTIFICATION_SERVER_ADDED.getString(),
+                                                            Notification.Type.HUMANIZED_MESSAGE);
+        successNotification.setDelayMsec(2500);
+        successNotification.setPosition(Position.MIDDLE_CENTER);
+        successNotification.show(Page.getCurrent());
     }
 
     private void saveFields() {
@@ -148,9 +162,8 @@ public class AddServerLayoutFactory extends VerticalLayout implements View, Butt
         serverMgmtIP.setValue(null);
         serverDataNet1.setValue(null);
         serverDataNet2.setValue(null);
+        serverOwner.setValue(null);
+        serverLocation.setValue(null);
     }
-
-    @Autowired
-    private AddServerService addServerService;
 }
 
