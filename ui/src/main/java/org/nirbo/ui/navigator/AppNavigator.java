@@ -22,7 +22,7 @@ public class AppNavigator extends Navigator {
         try {
             AppNavigator.getNavigator().navigateTo(path);
         } catch (Exception e) {
-            return;
+            e.printStackTrace();
         }
     }
 

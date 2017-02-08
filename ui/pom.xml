@@ -16,12 +16,12 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>4.3.5.RELEASE</version>
+            <version>4.3.6.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>com.vaadin</groupId>
             <artifactId>vaadin-spring</artifactId>
-            <version>1.1.1</version>
+            <version>1.2.0</version>
         </dependency>
         <dependency>
             <groupId>com.google.guava</groupId>
@@ -36,6 +36,11 @@
         <dependency>
             <groupId>org.nirbo</groupId>
             <artifactId>model</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.nirbo</groupId>
+            <artifactId>service</artifactId>
             <version>0.0.1</version>
         </dependency>
     </dependencies>

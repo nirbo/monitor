@@ -5,20 +5,20 @@ import com.vaadin.data.fieldgroup.FieldGroup;
 import com.vaadin.navigator.View;
 import com.vaadin.navigator.ViewChangeListener;
 import com.vaadin.shared.ui.label.ContentMode;
+import com.vaadin.spring.annotation.SpringComponent;
 import com.vaadin.spring.annotation.SpringView;
 import com.vaadin.ui.*;
 import com.vaadin.ui.themes.ValoTheme;
 import org.nirbo.model.entity.Server;
+import org.nirbo.service.addserver.AddServerService;
 import org.nirbo.ui.commons.MainUI;
-import org.nirbo.ui.commons.UILayoutBuilder;
 import org.nirbo.utils.CommonStrings;
 import org.nirbo.utils.NotificationStrings;
 import org.nirbo.utils.ServerStrings;
-import org.springframework.stereotype.*;
+import org.springframework.beans.factory.annotation.Autowired;
 
-import static javax.swing.text.html.HTML.Tag.H1;
-
-@SpringView(name=AddServerLayoutFactory.NAME, ui=MainUI.class)
+@SpringView(name = AddServerLayoutFactory.NAME, ui = MainUI.class)
+@SpringComponent
 public class AddServerLayoutFactory extends VerticalLayout implements View, Button.ClickListener {
 
     public static final String NAME = "addserver";
@@ -68,12 +68,13 @@ public class AddServerLayoutFactory extends VerticalLayout implements View, Butt
         serverDataNet2.setNullRepresentation("");
 
         serverName.setMaxLength(29);
-        serverName.setWidth("25%");
         serverMgmtIP.setMaxLength(15);
-        serverMgmtIP.setWidth("25%");
         serverDataNet1.setMaxLength(15);
-        serverDataNet1.setWidth("25%");
         serverDataNet2.setMaxLength(15);
+
+        serverName.setWidth("25%");
+        serverMgmtIP.setWidth("25%");
+        serverDataNet1.setWidth("25%");
         serverDataNet2.setWidth("25%");
         serverLocation.setWidth("25%");
         serverOwner.setWidth("25%");
@@ -124,6 +125,12 @@ public class AddServerLayoutFactory extends VerticalLayout implements View, Butt
         } else {
             clearFields();
         }
+
+        addServerService.saveServer(server);
+        clearFields();
+
+        Notification.show(NotificationStrings.NOTIFICATION_SERVER_ADDED.getString(),
+                NotificationStrings.NOTIFICATION_SUCCESS.getString(), Notification.Type.HUMANIZED_MESSAGE);
     }
 
     private void saveFields() {
@@ -133,8 +140,6 @@ public class AddServerLayoutFactory extends VerticalLayout implements View, Butt
             Notification.show(NotificationStrings.NOTIFICATION_ERROR.getString(),
                     NotificationStrings.NOTIFICATION_EMPTY_FIELDS_MESSAGE.getString(),
                     Notification.Type.ERROR_MESSAGE);
-
-            return;
         }
     }
 
@@ -144,5 +149,8 @@ public class AddServerLayoutFactory extends VerticalLayout implements View, Butt
         serverDataNet1.setValue(null);
         serverDataNet2.setValue(null);
     }
+
+    @Autowired
+    private AddServerService addServerService;
 }
 

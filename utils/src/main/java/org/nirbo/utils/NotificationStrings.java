@@ -3,7 +3,9 @@ package org.nirbo.utils;
 public enum NotificationStrings {
 
     NOTIFICATION_ERROR("ERROR: "),
-    NOTIFICATION_EMPTY_FIELDS_MESSAGE("All fields are required.");
+    NOTIFICATION_SUCCESS("SUCCESS: "),
+    NOTIFICATION_EMPTY_FIELDS_MESSAGE("All fields are required."),
+    NOTIFICATION_SERVER_ADDED("The server has been successfully added");
 
     private final String string;
 

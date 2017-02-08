@@ -1,6 +1,7 @@
 package org.nirbo.ui.commons;
 
 import com.vaadin.data.Property;
+import com.vaadin.spring.annotation.SpringComponent;
 import com.vaadin.ui.Alignment;
 import com.vaadin.ui.Layout;
 import com.vaadin.ui.Tree;
@@ -8,7 +9,7 @@ import com.vaadin.ui.VerticalLayout;
 import org.nirbo.ui.navigator.AppNavigator;
 import org.nirbo.utils.CommonStrings;
 
-@org.springframework.stereotype.Component
+@SpringComponent
 public class MainMenuLayoutFactory implements UILayoutBuilder {
 
     private class MainUILayout extends VerticalLayout implements Property.ValueChangeListener {
@@ -26,14 +27,15 @@ public class MainMenuLayoutFactory implements UILayoutBuilder {
             setMargin(true);
 
             mainMenu.addItem(CommonStrings.SERVERS.getString());
-            mainMenu.setChildrenAllowed(CommonStrings.SERVERS.getString(), true);
             mainMenu.addItem(CommonStrings.ADD_SERVER.getString());
-            mainMenu.setParent(CommonStrings.ADD_SERVER.getString(), CommonStrings.SERVERS.getString());
-            mainMenu.setChildrenAllowed(CommonStrings.ADD_SERVER.getString(), false);
-            mainMenu.expandItem(CommonStrings.SERVERS.getString());
-
             mainMenu.addItem(CommonStrings.TICKETS.getString());
+
+            mainMenu.setChildrenAllowed(CommonStrings.SERVERS.getString(), true);
+            mainMenu.setChildrenAllowed(CommonStrings.ADD_SERVER.getString(), false);
             mainMenu.setChildrenAllowed(CommonStrings.TICKETS.getString(), true);
+
+            mainMenu.setParent(CommonStrings.ADD_SERVER.getString(), CommonStrings.SERVERS.getString());
+            mainMenu.expandItem(CommonStrings.SERVERS.getString());
 
             addComponent(mainMenu);
             setComponentAlignment(mainMenu, Alignment.TOP_LEFT);

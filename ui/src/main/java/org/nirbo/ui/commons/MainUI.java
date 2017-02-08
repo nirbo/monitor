@@ -5,13 +5,16 @@ import com.vaadin.annotations.Title;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.spring.annotation.SpringUI;
 import com.vaadin.spring.navigator.SpringViewProvider;
-import com.vaadin.ui.*;
+import com.vaadin.ui.HorizontalLayout;
+import com.vaadin.ui.Panel;
+import com.vaadin.ui.UI;
+import com.vaadin.ui.VerticalLayout;
 import org.nirbo.ui.navigator.AppNavigator;
 import org.nirbo.ui.servers.AddServerLayoutFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 
-@SpringUI(path=MainUI.NAME)
+@SpringUI(path = MainUI.NAME)
 @Title("Monitor App")
 @Theme("monitorTheme")
 public class MainUI extends UI {
