@@ -12,6 +12,8 @@ public enum ServerStrings {
     SERVER_OWNER("Owner"),
     BUTTON_ADD_SERVER("Add Server"),
     BUTTON_CLEAR_FORM("Clear Form"),
+
+    BUTTON_MULTI_SELECT("Multi-Select"),
     BUTTON_EDIT_SERVER("Edit"),
     BUTTON_DELETE_SERVER("Delete");
 

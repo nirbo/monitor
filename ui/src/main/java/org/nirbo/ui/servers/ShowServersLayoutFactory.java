@@ -18,7 +18,7 @@ import java.util.List;
 
 @SpringView(name = ShowServersLayoutFactory.NAME, ui = MainUI.class)
 @SpringComponent
-public class ShowServersLayoutFactory extends VerticalLayout implements View {
+public class ShowServersLayoutFactory extends VerticalLayout implements View, Button.ClickListener {
 
     public static final String NAME = "showservers";
 
@@ -29,6 +29,11 @@ public class ShowServersLayoutFactory extends VerticalLayout implements View {
     private RemoveServerService removeServerService;
 
     private HorizontalLayout actionButtons;
+    private Button multiSelectButton;
+    private Button editButton;
+    private Button deleteButton;
+    private Boolean isMultiSelectMode = false;
+
     private List<Server> serverList;
     private BeanItemContainer<Server> container;
     private Grid serversTable;
@@ -43,8 +48,7 @@ public class ShowServersLayoutFactory extends VerticalLayout implements View {
         setMargin(true);
         setSpacing(true);
 
-        serverList = showServersService.getAllServers();
-        container = new BeanItemContainer<Server>(Server.class, serverList);
+        getServersFromDb();
 
         serversTable = new Grid(container);
         serversTable.setSizeFull();
@@ -60,19 +64,78 @@ public class ShowServersLayoutFactory extends VerticalLayout implements View {
         setExpandRatio(serversTable, 0.95f);
     }
 
+    private void getServersFromDb() {
+        serverList = showServersService.getAllServers();
+        container = new BeanItemContainer<Server>(Server.class, serverList);
+    }
+
     private void createActionButtonsLayout() {
         actionButtons = new HorizontalLayout();
         actionButtons.setSpacing(true);
 
-        Button editButton = new Button(ServerStrings.BUTTON_EDIT_SERVER.getString());
-        Button deleteButton = new Button(ServerStrings.BUTTON_DELETE_SERVER.getString());
+        multiSelectButton = new Button(ServerStrings.BUTTON_MULTI_SELECT.getString());
+        editButton = new Button(ServerStrings.BUTTON_EDIT_SERVER.getString());
+        deleteButton = new Button(ServerStrings.BUTTON_DELETE_SERVER.getString());
 
+        multiSelectButton.setStyleName(ValoTheme.BUTTON_FRIENDLY);
         editButton.setStyleName(ValoTheme.BUTTON_FRIENDLY);
         deleteButton.setStyleName(ValoTheme.BUTTON_DANGER);
 
+        multiSelectButton.addClickListener(this);
+        editButton.addClickListener(this);
+        deleteButton.addClickListener(this);
+
+        actionButtons.addComponent(multiSelectButton);
         actionButtons.addComponent(editButton);
         actionButtons.addComponent(deleteButton);
+        actionButtons.setComponentAlignment(multiSelectButton, Alignment.TOP_LEFT);
         actionButtons.setComponentAlignment(editButton, Alignment.TOP_LEFT);
         actionButtons.setComponentAlignment(deleteButton, Alignment.TOP_LEFT);
+    }
+
+    public void buttonClick(Button.ClickEvent event) {
+        if (event.getSource() == this.multiSelectButton) {
+            setMultiSelectMode();
+        } else if (event.getSource() == this.editButton){
+            editServer();
+        } else {
+            removeServer();
+        }
+    }
+
+    private void setMultiSelectMode() {
+        if (! isMultiSelectMode) {
+            serversTable.setSelectionMode(Grid.SelectionMode.MULTI);
+            isMultiSelectMode = true;
+        } else {
+            serversTable.setSelectionMode(Grid.SelectionMode.SINGLE);
+            isMultiSelectMode = false;
+        }
+
+    }
+
+    private void editServer() {
+    }
+
+    private void removeServer() {
+        if (isMultiSelectMode) {
+            Grid.MultiSelectionModel selectionModel = (Grid.MultiSelectionModel) serversTable.getSelectionModel();
+
+            for (Object selectedItem : selectionModel.getSelectedRows()) {
+                Server server = (Server) selectedItem;
+                serversTable.getContainerDataSource().removeItem(server);
+                removeServerService.removeServer(server);
+            }
+
+            serversTable.getSelectionModel().reset();
+            setMultiSelectMode();
+
+        } else {
+            Grid.SingleSelectionModel selectionModel = (Grid.SingleSelectionModel) serversTable.getSelectionModel();
+            Object selectedItem = selectionModel.getSelectedRow();
+            Server server = (Server) selectedItem;
+            serversTable.getContainerDataSource().removeItem(server);
+            removeServerService.removeServer(server);
+        }
     }
 }
