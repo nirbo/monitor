@@ -12,5 +12,4 @@ public interface ServerRepository extends JpaRepository<Server, Long> {
 
     @Query("select s from Server s order by s.serverMgmtIP")
     List<Server> getAllServers();
-
 }
