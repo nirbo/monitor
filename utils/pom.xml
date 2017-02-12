@@ -12,5 +12,12 @@
     <artifactId>utils</artifactId>
     <packaging>jar</packaging>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.vaadin</groupId>
+            <artifactId>vaadin-spring</artifactId>
+            <version>1.2.0</version>
+        </dependency>
+    </dependencies>
 
 </project>

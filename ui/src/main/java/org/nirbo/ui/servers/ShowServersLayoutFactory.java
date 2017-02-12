@@ -8,6 +8,7 @@ import com.vaadin.spring.annotation.SpringView;
 import com.vaadin.ui.*;
 import com.vaadin.ui.themes.ValoTheme;
 import org.nirbo.model.entity.Server;
+import org.nirbo.notifier.ServerNotifier;
 import org.nirbo.service.removeServer.RemoveServerService;
 import org.nirbo.service.showservers.ShowServersService;
 import org.nirbo.ui.commons.MainUI;
@@ -137,5 +138,7 @@ public class ShowServersLayoutFactory extends VerticalLayout implements View, Bu
             serversTable.getContainerDataSource().removeItem(server);
             removeServerService.removeServer(server);
         }
+
+        ServerNotifier.removeServerSuccessNotify();
     }
 }
