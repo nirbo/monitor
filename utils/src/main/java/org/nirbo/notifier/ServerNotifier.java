@@ -40,4 +40,14 @@ public class ServerNotifier {
         notification.show(Page.getCurrent());
     }
 
+    public static void noRowSelectedNotify() {
+        Notification notification = new Notification(
+                NotificationStrings.NOTIFICATION_ERROR.getString(),
+                NotificationStrings.NOTIFICATION_SERVER_LIST_NO_ROW_SELECTED.getString(),
+                Notification.Type.ERROR_MESSAGE);
+
+        notification.setDelayMsec(5000);
+        notification.setPosition(Position.MIDDLE_CENTER);
+        notification.show(Page.getCurrent());
+    }
 }

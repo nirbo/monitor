@@ -12,8 +12,8 @@ public class AddServerServiceImpl implements AddServerService {
     private ServerRepository serverRepository;
 
     public void saveServer(Server serverDAO) {
-
         Server server = new Server();
+
         server.setServerName(serverDAO.getServerName());
         server.setServerMgmtIP(serverDAO.getServerMgmtIP());
         server.setServerDataNet1(serverDAO.getServerDataNet1());

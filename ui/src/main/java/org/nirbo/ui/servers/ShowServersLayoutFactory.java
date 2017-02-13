@@ -1,6 +1,7 @@
 package org.nirbo.ui.servers;
 
 import com.vaadin.data.util.BeanItemContainer;
+import com.vaadin.event.SelectionEvent;
 import com.vaadin.navigator.View;
 import com.vaadin.navigator.ViewChangeListener;
 import com.vaadin.spring.annotation.SpringComponent;
@@ -19,7 +20,7 @@ import java.util.List;
 
 @SpringView(name = ShowServersLayoutFactory.NAME, ui = MainUI.class)
 @SpringComponent
-public class ShowServersLayoutFactory extends VerticalLayout implements View, Button.ClickListener {
+public class ShowServersLayoutFactory extends VerticalLayout implements View, Button.ClickListener, SelectionEvent.SelectionListener {
 
     public static final String NAME = "showservers";
 
@@ -34,6 +35,7 @@ public class ShowServersLayoutFactory extends VerticalLayout implements View, Bu
     private Button editButton;
     private Button deleteButton;
     private Boolean isMultiSelectMode = false;
+    private Boolean isGridRowSelected = false;
 
     private List<Server> serverList;
     private BeanItemContainer<Server> container;
@@ -52,6 +54,7 @@ public class ShowServersLayoutFactory extends VerticalLayout implements View, Bu
         getServersFromDb();
 
         serversTable = new Grid(container);
+        serversTable.addSelectionListener(this);
         serversTable.setSizeFull();
         serversTable.setColumnOrder("serverName", "serverMgmtIP", "serverDataNet1", "serverDataNet2", "serverLocation", "serverOwner");
         serversTable.removeColumn("id");
@@ -119,26 +122,43 @@ public class ShowServersLayoutFactory extends VerticalLayout implements View, Bu
     }
 
     private void removeServer() {
-        if (isMultiSelectMode) {
-            Grid.MultiSelectionModel selectionModel = (Grid.MultiSelectionModel) serversTable.getSelectionModel();
+        if (isGridRowSelected) {
+            if (isMultiSelectMode) {
+                Grid.MultiSelectionModel selectionModel = (Grid.MultiSelectionModel) serversTable.getSelectionModel();
 
-            for (Object selectedItem : selectionModel.getSelectedRows()) {
-                Server server = (Server) selectedItem;
-                serversTable.getContainerDataSource().removeItem(server);
-                removeServerService.removeServer(server);
+                for (Object selectedItem : selectionModel.getSelectedRows()) {
+                    Server server = (Server) selectedItem;
+                    serversTable.getContainerDataSource().removeItem(server);
+                    removeServerService.removeServer(server);
+                    serversTable.deselect(server);
+                }
+
+                serversTable.getSelectionModel().reset();
+                setMultiSelectMode();
+                ServerNotifier.removeServerSuccessNotify();
+
+            } else {
+                Grid.SingleSelectionModel selectionModel = (Grid.SingleSelectionModel) serversTable.getSelectionModel();
+                Object selectedItem = selectionModel.getSelectedRow();
+                if (serversTable.isSelected(selectedItem)) {
+                    Server server = (Server) selectedItem;
+                    serversTable.getContainerDataSource().removeItem(server);
+                    removeServerService.removeServer(server);
+                    serversTable.deselect(server);
+                    ServerNotifier.removeServerSuccessNotify();
+                } else {
+                    ServerNotifier.noRowSelectedNotify();
+                }
             }
 
-            serversTable.getSelectionModel().reset();
-            setMultiSelectMode();
-
         } else {
-            Grid.SingleSelectionModel selectionModel = (Grid.SingleSelectionModel) serversTable.getSelectionModel();
-            Object selectedItem = selectionModel.getSelectedRow();
-            Server server = (Server) selectedItem;
-            serversTable.getContainerDataSource().removeItem(server);
-            removeServerService.removeServer(server);
+            ServerNotifier.noRowSelectedNotify();
         }
+    }
 
-        ServerNotifier.removeServerSuccessNotify();
+    public void select(SelectionEvent event) {
+        if (event.getSelected() != null) {
+            isGridRowSelected = true;
+        }
     }
 }
