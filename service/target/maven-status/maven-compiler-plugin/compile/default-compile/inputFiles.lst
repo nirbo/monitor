@@ -1,2 +1,6 @@
 /home/nir/dev/monitor/service/src/main/java/org/nirbo/service/addserver/AddServerService.java
+/home/nir/dev/monitor/service/src/main/java/org/nirbo/service/removeServer/RemoveServerService.java
+/home/nir/dev/monitor/service/src/main/java/org/nirbo/service/removeServer/RemoveServerServiceImpl.java
+/home/nir/dev/monitor/service/src/main/java/org/nirbo/service/showservers/ShowServersServiceImpl.java
 /home/nir/dev/monitor/service/src/main/java/org/nirbo/service/addserver/AddServerServiceImpl.java
+/home/nir/dev/monitor/service/src/main/java/org/nirbo/service/showservers/ShowServersService.java
