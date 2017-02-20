@@ -94,6 +94,7 @@
           <element id="library" level="project" name="Maven: org.ow2.asm:asm-tree:5.0.3" />
           <element id="library" level="project" name="Maven: org.ow2.asm:asm-commons:5.0.3" />
           <element id="library" level="project" name="Maven: com.vaadin.addon:vaadin-context-menu:0.7.4" />
+          <element id="library" level="project" name="Maven: org.vaadin.teemusa:gridextensionpack:1.1.1" />
           <element id="library" level="project" name="Maven: org.vaadin.addons:dom:0.1.0" />
           <element id="library" level="project" name="Maven: org.vaadin.addons:animator:2.0.0" />
           <element id="library" level="project" name="Maven: com.google.guava:guava:r05" />

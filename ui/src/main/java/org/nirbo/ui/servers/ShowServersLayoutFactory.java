@@ -1,18 +1,27 @@
 package org.nirbo.ui.servers;
 
+import com.vaadin.addon.contextmenu.ContextMenu;
+import com.vaadin.addon.contextmenu.GridContextMenu;
+import com.vaadin.addon.contextmenu.Menu;
+import com.vaadin.addon.contextmenu.MenuItem;
 import com.vaadin.data.util.BeanItemContainer;
 import com.vaadin.event.SelectionEvent;
 import com.vaadin.navigator.View;
 import com.vaadin.navigator.ViewChangeListener;
+import com.vaadin.server.FontAwesome;
 import com.vaadin.spring.annotation.SpringComponent;
 import com.vaadin.spring.annotation.SpringView;
 import com.vaadin.ui.*;
 import com.vaadin.ui.themes.ValoTheme;
 import org.nirbo.model.entity.Server;
 import org.nirbo.notifier.ServerNotifier;
+import org.nirbo.service.addserver.AddServerService;
 import org.nirbo.service.removeServer.RemoveServerService;
 import org.nirbo.service.showservers.ShowServersService;
+import org.nirbo.service.updateserver.UpdateServerService;
 import org.nirbo.ui.commons.MainUI;
+import org.nirbo.ui.components.EditServerWindow;
+import org.nirbo.utils.CommonStrings;
 import org.nirbo.utils.ServerStrings;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -20,7 +29,8 @@ import java.util.List;
 
 @SpringView(name = ShowServersLayoutFactory.NAME, ui = MainUI.class)
 @SpringComponent
-public class ShowServersLayoutFactory extends VerticalLayout implements View, Button.ClickListener, SelectionEvent.SelectionListener {
+public class ShowServersLayoutFactory extends VerticalLayout implements View, Button.ClickListener, SelectionEvent.SelectionListener,
+                                                                GridContextMenu.GridContextMenuOpenListener {
 
     public static final String NAME = "showservers";
 
@@ -29,6 +39,12 @@ public class ShowServersLayoutFactory extends VerticalLayout implements View, Bu
 
     @Autowired
     private RemoveServerService removeServerService;
+
+    @Autowired
+    private AddServerService addServerService;
+
+    @Autowired
+    private UpdateServerService updateServerService;
 
     private HorizontalLayout actionButtons;
     private Button multiSelectButton;
@@ -54,11 +70,14 @@ public class ShowServersLayoutFactory extends VerticalLayout implements View, Bu
         getServersFromDb();
 
         serversTable = new Grid(container);
-        serversTable.addSelectionListener(this);
         serversTable.setSizeFull();
         serversTable.setColumnOrder("serverName", "serverMgmtIP", "serverDataNet1", "serverDataNet2", "serverLocation", "serverOwner");
         serversTable.removeColumn("id");
         serversTable.setImmediate(true);
+        serversTable.addSelectionListener(this);
+
+        GridContextMenu gridContextMenu = new GridContextMenu(serversTable);
+        gridContextMenu.addGridBodyContextMenuListener(this);
 
         createActionButtonsLayout();
 
@@ -159,6 +178,30 @@ public class ShowServersLayoutFactory extends VerticalLayout implements View, Bu
     public void select(SelectionEvent event) {
         if (event.getSelected() != null) {
             isGridRowSelected = true;
+        }
+    }
+
+    public void onContextMenuOpen(final GridContextMenuOpenEvent event) {
+        ContextMenu contextMenu = event.getContextMenu();
+        contextMenu.removeItems();
+        final Object itemId = event.getItemId();
+        if (itemId != null) {
+            contextMenu.addItem(CommonStrings.EDIT.getString(), FontAwesome.EDIT, new Menu.Command() {
+
+                public void menuSelected(MenuItem selectedItem) {
+                    Grid.SingleSelectionModel selectionModel = (Grid.SingleSelectionModel) serversTable.getSelectionModel();
+                    selectionModel.select(event.getItemId());
+                    Object item = selectionModel.getSelectedRow();
+                    if (serversTable.isSelected(item)) {
+                        Server server = (Server) item;
+                        Server serverFromDb = showServersService.getServerById(server.getId());
+                        EditServerWindow editWindow = new EditServerWindow(ServerStrings.EDIT_SERVER.getString(), serverFromDb, updateServerService);
+                        UI.getCurrent().addWindow(editWindow);
+                    } else {
+                        ServerNotifier.noRowSelectedNotify();
+                    }
+                }
+            });
         }
     }
 }

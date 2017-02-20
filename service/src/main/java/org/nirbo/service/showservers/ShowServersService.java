@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface ShowServersService {
     List<Server> getAllServers();
+
+    Server getServerById(Long id);
 }

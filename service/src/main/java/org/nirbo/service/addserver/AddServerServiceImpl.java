@@ -21,6 +21,6 @@ public class AddServerServiceImpl implements AddServerService {
         server.setServerLocation(serverDAO.getServerLocation());
         server.setServerOwner(serverDAO.getServerOwner());
 
-        serverRepository.save(server);
+        serverRepository.saveAndFlush(server);
     }
 }

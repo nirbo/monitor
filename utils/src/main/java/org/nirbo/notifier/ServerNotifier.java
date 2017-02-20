@@ -50,4 +50,15 @@ public class ServerNotifier {
         notification.setPosition(Position.MIDDLE_CENTER);
         notification.show(Page.getCurrent());
     }
+
+    public static void updateServerSuccessNotify() {
+        Notification notification = new Notification(
+                NotificationStrings.NOTIFICATION_SUCCESS.getString(),
+                NotificationStrings.NOTIFICATION_SERVER_UPDATED.getString(),
+                Notification.Type.HUMANIZED_MESSAGE);
+
+        notification.setDelayMsec(2500);
+        notification.setPosition(Position.MIDDLE_CENTER);
+        notification.show(Page.getCurrent());
+    }
 }

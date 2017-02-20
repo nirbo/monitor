@@ -16,4 +16,8 @@ public class ShowServersServiceImpl implements ShowServersService {
     public List<Server> getAllServers() {
         return serverRepository.getAllServers();
     }
+
+    public Server getServerById(Long serverId) {
+        return serverRepository.findOne(serverId);
+    }
 }

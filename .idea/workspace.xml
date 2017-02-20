@@ -2,33 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34686f9f-7e02-45eb-add0-39895c2a8455" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/ui_GWT.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_addon_vaadin_context_menu_0_7_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_gwt_gwt_dev_2_7_0_vaadin4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_gwt_gwt_elemental_2_7_0_vaadin4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_gwt_gwt_user_2_7_0_vaadin4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_vaadin_client_7_7_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_vaadin_client_compiler_7_7_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_sources_1_0_0_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_commons_5_0_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_tree_5_0_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_util_5_0_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_vaadin_addons_animator_2_0_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_vaadin_addons_dom_0_1_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_vaadin_teemusa_gridextensionpack_1_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/src/main/java/org/nirbo/service/updateserver/UpdateServerService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/src/main/java/org/nirbo/service/updateserver/UpdateServerServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/components/EditServerWindow.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/target/database-0.0.1.jar" afterPath="$PROJECT_DIR$/database/target/database-0.0.1.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/target/model-0.0.1.jar" afterPath="$PROJECT_DIR$/model/target/model-0.0.1.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/target/service-0.0.1.jar" afterPath="$PROJECT_DIR$/service/target/service-0.0.1.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/target/ui-0.0.1.jar" afterPath="$PROJECT_DIR$/ui/target/ui-0.0.1.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/target/utils-0.0.1.jar" afterPath="$PROJECT_DIR$/utils/target/utils-0.0.1.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/classes/org/nirbo/launcher/SpringBootApp.class" afterPath="$PROJECT_DIR$/web/target/classes/org/nirbo/launcher/SpringBootApp.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/target/classes/org/nirbo/utils/CommonStrings.class" afterPath="$PROJECT_DIR$/utils/target/classes/org/nirbo/utils/CommonStrings.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/web_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/web_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/src/main/java/org/nirbo/repository/server/ServerRepository.java" afterPath="$PROJECT_DIR$/database/src/main/java/org/nirbo/repository/server/ServerRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/org/nirbo/service/addserver/AddServerServiceImpl.java" afterPath="$PROJECT_DIR$/service/src/main/java/org/nirbo/service/addserver/AddServerServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/org/nirbo/service/showservers/ShowServersService.java" afterPath="$PROJECT_DIR$/service/src/main/java/org/nirbo/service/showservers/ShowServersService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/org/nirbo/service/showservers/ShowServersServiceImpl.java" afterPath="$PROJECT_DIR$/service/src/main/java/org/nirbo/service/showservers/ShowServersServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/pom.xml" afterPath="$PROJECT_DIR$/ui/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/ui/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/servers/AddServerLayoutFactory.java" afterPath="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/servers/AddServerLayoutFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/servers/ShowServersLayoutFactory.java" afterPath="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/servers/ShowServersLayoutFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/ui/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/ui.iml" afterPath="$PROJECT_DIR$/ui/ui.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/utils/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/src/main/java/org/nirbo/notifier/ServerNotifier.java" afterPath="$PROJECT_DIR$/utils/src/main/java/org/nirbo/notifier/ServerNotifier.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/src/main/java/org/nirbo/utils/CommonStrings.java" afterPath="$PROJECT_DIR$/utils/src/main/java/org/nirbo/utils/CommonStrings.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/src/main/java/org/nirbo/utils/NotificationStrings.java" afterPath="$PROJECT_DIR$/utils/src/main/java/org/nirbo/utils/NotificationStrings.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/src/main/java/org/nirbo/utils/ServerStrings.java" afterPath="$PROJECT_DIR$/utils/src/main/java/org/nirbo/utils/ServerStrings.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/web.iml" afterPath="$PROJECT_DIR$/web/web.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -58,7 +54,7 @@
       <file leaf-file-name="MainUI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/commons/MainUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="767">
               <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
               <folding />
             </state>
@@ -68,9 +64,27 @@
       <file leaf-file-name="ShowServersLayoutFactory.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/servers/ShowServersLayoutFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="137" column="59" lean-forward="false" selection-start-line="137" selection-start-column="59" selection-end-line="137" selection-end-column="59" />
-              <folding />
+            <state relative-caret-position="587">
+              <caret line="197" column="68" lean-forward="true" selection-start-line="197" selection-start-column="68" selection-end-line="197" selection-end-column="68" />
+              <folding>
+                <element signature="e#7065#7972#0" expanded="true" />
+                <element signature="e#7971#7972#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EditServerWindow.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/components/EditServerWindow.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="133" column="68" lean-forward="true" selection-start-line="133" selection-start-column="68" selection-end-line="133" selection-end-column="68" />
+              <folding>
+                <element signature="e#1393#1394#0" expanded="true" />
+                <element signature="e#1423#1424#0" expanded="true" />
+                <element signature="e#5370#5371#0" expanded="true" />
+                <element signature="e#5393#5394#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -80,8 +94,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -98,6 +112,14 @@
       <find>AddServerL</find>
       <find>AddServerLayout</find>
       <find>gri</find>
+      <find>getsource</find>
+      <find>select()</find>
+      <find>removeall</find>
+      <find>this.</find>
+      <find>edit</find>
+      <find>this.server</find>
+      <find>saveandflush</find>
+      <find>save(</find>
       <find>delete</find>
     </findStrings>
   </component>
@@ -113,12 +135,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/servertab/AddServerWindow.java" />
-        <option value="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/servertab/AddServerWindowLayoutBuilder.java" />
-        <option value="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/servertab/ServersTabUILayoutFactory.java" />
-        <option value="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/servertab/AddServerWindowLayoutFactory.java" />
-        <option value="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/commons/MainUIComponentBuilder.java" />
-        <option value="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/commons/MainUILayoutFactory.java" />
         <option value="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/commons/MainUILayoutBuilder.java" />
         <option value="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/commons/UIComponentFactory.java" />
         <option value="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/commons/UIComponentBuilder.java" />
@@ -130,22 +146,16 @@
         <option value="$PROJECT_DIR$/database/pom.xml" />
         <option value="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/navigator/AppNavigator.java" />
         <option value="$PROJECT_DIR$/model/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/service/src/main/java/org/nirbo/service/addserver/AddServerService.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/org/nirbo/launcher/SpringBootApp.java" />
-        <option value="$PROJECT_DIR$/utils/src/main/java/org/nirbo/utils/CommonStrings.java" />
         <option value="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/commons/MainMenuLayoutFactory.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/org/nirbo/service/showservers/ShowServersServiceImpl.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/org/nirbo/service/showservers/ShowServersService.java" />
         <option value="$PROJECT_DIR$/utils/src/main/java/org/nirbo/utils/LocationStrings.java" />
         <option value="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/commons/MainUI.java" />
         <option value="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/servers/ServerAddedListener.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/org/nirbo/model/entity/Owner.java" />
-        <option value="$PROJECT_DIR$/database/src/main/java/org/nirbo/repository/server/ServerRepository.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/org/nirbo/service/removeServer/removeServerService.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/org/nirbo/service/removeServer/removeServerServiceImpl.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/org/nirbo/service/removeServer/RemoveServerServiceImpl.java" />
         <option value="$PROJECT_DIR$/model/src/main/java/org/nirbo/model/entity/Server.java" />
-        <option value="$PROJECT_DIR$/utils/src/main/java/org/nirbo/utils/ServerStrings.java" />
         <option value="$PROJECT_DIR$/utils/src/main/java/org/nirbo/utils/Utilities.java" />
         <option value="$PROJECT_DIR$/utils/src/main/java/org/nirbo/utils/ServerNotifications.java" />
         <option value="$PROJECT_DIR$/utils/src/main/java/org/nirbo/utils/ServerNotificationBuilder.java" />
@@ -156,14 +166,26 @@
         <option value="$PROJECT_DIR$/utils/pom.xml" />
         <option value="$PROJECT_DIR$/utils/src/main/java/org/nirbo/utils/notifier/ServerNotifier.java" />
         <option value="$PROJECT_DIR$/utils/src/main/java/notifier/ServerNotifier.java" />
-        <option value="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/servers/AddServerLayoutFactory.java" />
-        <option value="$PROJECT_DIR$/utils/src/main/java/org/nirbo/notifier/ServerNotifier.java" />
-        <option value="$PROJECT_DIR$/utils/src/main/java/org/nirbo/utils/NotificationStrings.java" />
         <option value="$USER_HOME$/.IntelliJIdea2016.3/idea64.vmoptions" />
-        <option value="$PROJECT_DIR$/service/src/main/java/org/nirbo/service/addserver/AddServerServiceImpl.java" />
-        <option value="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/servers/ShowServersLayoutFactory.java" />
         <option value="$PROJECT_DIR$/ui/target/classes/AppWidgetset.gwt.xml" />
+        <option value="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/components/ShowServersContextMenu.java" />
+        <option value="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/components/ShowServersGrid.java" />
         <option value="$PROJECT_DIR$/ui/pom.xml" />
+        <option value="$PROJECT_DIR$/utils/src/main/java/org/nirbo/utils/ServerStrings.java" />
+        <option value="$PROJECT_DIR$/utils/src/main/java/org/nirbo/utils/CommonStrings.java" />
+        <option value="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/components/ServerEditWindow.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/org/nirbo/service/showservers/ShowServersServiceImpl.java" />
+        <option value="$PROJECT_DIR$/utils/src/main/java/org/nirbo/utils/NotificationStrings.java" />
+        <option value="$PROJECT_DIR$/utils/src/main/java/org/nirbo/notifier/ServerNotifier.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/org/nirbo/service/showservers/ShowServersService.java" />
+        <option value="$PROJECT_DIR$/database/src/main/java/org/nirbo/repository/server/ServerRepository.java" />
+        <option value="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/servers/AddServerLayoutFactory.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/org/nirbo/service/addserver/AddServerService.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/org/nirbo/service/updateserver/UpdateServerService.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/org/nirbo/service/addserver/AddServerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/org/nirbo/service/updateserver/UpdateServerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/servers/ShowServersLayoutFactory.java" />
+        <option value="$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/components/EditServerWindow.java" />
       </list>
     </option>
   </component>
@@ -509,6 +531,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="monitor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="monitor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="commons" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -524,6 +580,40 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="monitor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="monitor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="updateserver" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1350,12 +1440,12 @@
       <workItem from="1486975947854" duration="319000" />
       <workItem from="1486976306354" duration="3747000" />
       <workItem from="1486980223959" duration="3107000" />
-      <workItem from="1487231035159" duration="2769000" />
+      <workItem from="1487231035159" duration="49234000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180529000" />
+    <option name="totallyTimeSpent" value="226994000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1378,7 +1468,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32824427" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32694477" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.187567" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4113856" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1420,24 +1510,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/commons/MainUITabsComponentBuilder.java" />
-    <entry file="file://$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/commons/MainUITabsLayoutFactory.java" />
-    <entry file="file://$PROJECT_DIR$/ui/src/main/java/org/nirbo/maintabs/MainTabsLayoutFactory.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/com/vaadin/vaadin-server/7.7.3/vaadin-server-7.7.3-sources.jar!/com/vaadin/ui/themes/ValoTheme.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3054">
-          <caret line="739" column="31" lean-forward="false" selection-start-line="739" selection-start-column="31" selection-end-line="739" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/VAADIN/themes/monitorTheme/monitorTheme.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui/src/main/java/org/nirbo/navigator/MonitorNavigator.java" />
     <entry file="file://$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/servers/ServersLayoutFactory.java" />
     <entry file="file://$PROJECT_DIR$/web/web.iml">
       <provider selected="true" editor-type-id="text-editor">
@@ -1589,21 +1661,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/org/nirbo/service/addserver/AddServerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/src/main/java/org/nirbo/utils/CommonStrings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="17" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utils/src/main/java/org/nirbo/utils/LocationStrings.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1629,65 +1686,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/servers/ServerAddedListener.java" />
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/org/nirbo/service/showservers/ShowServersService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model/src/main/java/org/nirbo/model/entity/Owner.java" />
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/org/nirbo/service/showservers/ShowServersServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="16" column="40" lean-forward="false" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/1.11.0.RELEASE/spring-data-jpa-1.11.0.RELEASE-sources.jar!/org/springframework/data/jpa/repository/JpaRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="79" column="7" lean-forward="true" selection-start-line="79" selection-start-column="7" selection-end-line="79" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/org/nirbo/service/removeServer/RemoveServerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="44" lean-forward="false" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/src/main/java/org/nirbo/model/entity/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="36" column="31" lean-forward="true" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/commons/MainMenuLayoutFactory.java" />
-    <entry file="file://$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/commons/MainUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/src/main/java/org/nirbo/utils/ServerStrings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-          <folding>
-            <element signature="e#584#585#0" expanded="false" />
-            <element signature="e#620#621#0" expanded="false" />
-            <element signature="e#653#654#0" expanded="false" />
-            <element signature="e#687#688#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utils/src/main/java/org/nirbo/notifications/ServerNotifier.java" />
     <entry file="file://$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/notifier/ServerNotifier.java" />
     <entry file="file://$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/notifiers/ServerNotifier.java" />
@@ -1699,42 +1699,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/src/main/java/org/nirbo/utils/NotificationStrings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="78" lean-forward="false" selection-start-line="10" selection-start-column="78" selection-end-line="10" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/src/main/java/org/nirbo/notifier/ServerNotifier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="623">
-          <caret line="45" column="57" lean-forward="false" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.IntelliJIdea2016.3/idea64.vmoptions">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/src/main/java/org/nirbo/repository/server/ServerRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="13" column="33" lean-forward="false" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/org/nirbo/service/addserver/AddServerServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1743,17 +1711,7 @@
         <state relative-caret-position="198">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
-            <element signature="e#477#478#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/servers/AddServerLayoutFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="136" column="22" lean-forward="false" selection-start-line="136" selection-start-column="22" selection-end-line="136" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#477#478#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1766,19 +1724,190 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/model/src/main/java/org/nirbo/model/entity/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="36" column="31" lean-forward="true" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/vaadin/addon/vaadin-context-menu/0.7.4/vaadin-context-menu-0.7.4-sources.jar!/com/vaadin/addon/contextmenu/MenuItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="123" column="8" lean-forward="false" selection-start-line="123" selection-start-column="8" selection-end-line="123" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/commons/MainUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="767">
+          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/components/ShowServersGrid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/vaadin/vaadin-server/7.7.6/vaadin-server-7.7.6-sources.jar!/com/vaadin/event/SelectionEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="100" column="21" lean-forward="false" selection-start-line="100" selection-start-column="21" selection-end-line="100" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ui/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="82" column="36" lean-forward="true" selection-start-line="82" selection-start-column="36" selection-end-line="82" selection-end-column="36" />
+        <state relative-caret-position="317">
+          <caret line="89" column="20" lean-forward="true" selection-start-line="89" selection-start-column="20" selection-end-line="89" selection-end-column="20" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/org/nirbo/utils/CommonStrings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/org/nirbo/utils/ServerStrings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/org/nirbo/service/removeServer/RemoveServerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="44" lean-forward="false" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/org/nirbo/utils/NotificationStrings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="31" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/org/nirbo/notifier/ServerNotifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="623">
+          <caret line="56" column="76" lean-forward="true" selection-start-line="56" selection-start-column="76" selection-end-line="56" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/1.11.0.RELEASE/spring-data-jpa-1.11.0.RELEASE-sources.jar!/org/springframework/data/jpa/repository/JpaRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="64" column="51" lean-forward="true" selection-start-line="64" selection-start-column="51" selection-end-line="64" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/org/nirbo/service/showservers/ShowServersService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="6" column="37" lean-forward="false" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/org/nirbo/repository/server/ServerRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="24" column="75" lean-forward="true" selection-start-line="24" selection-start-column="75" selection-end-line="24" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/servers/AddServerLayoutFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="135" column="44" lean-forward="true" selection-start-line="135" selection-start-column="44" selection-end-line="135" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/org/nirbo/service/addserver/AddServerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="38" lean-forward="false" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/org/nirbo/service/updateserver/UpdateServerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="37" lean-forward="false" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/org/nirbo/service/addserver/AddServerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/org/nirbo/service/showservers/ShowServersServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" column="46" lean-forward="false" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/org/nirbo/service/updateserver/UpdateServerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+          <folding>
+            <element signature="e#438#439#0" expanded="true" />
+            <element signature="e#499#500#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/components/EditServerWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="133" column="68" lean-forward="true" selection-start-line="133" selection-start-column="68" selection-end-line="133" selection-end-column="68" />
+          <folding>
+            <element signature="e#1393#1394#0" expanded="true" />
+            <element signature="e#1423#1424#0" expanded="true" />
+            <element signature="e#5370#5371#0" expanded="true" />
+            <element signature="e#5393#5394#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ui/src/main/java/org/nirbo/ui/servers/ShowServersLayoutFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="137" column="59" lean-forward="false" selection-start-line="137" selection-start-column="59" selection-end-line="137" selection-end-column="59" />
-          <folding />
+        <state relative-caret-position="587">
+          <caret line="197" column="68" lean-forward="true" selection-start-line="197" selection-start-column="68" selection-end-line="197" selection-end-column="68" />
+          <folding>
+            <element signature="e#7065#7972#0" expanded="true" />
+            <element signature="e#7971#7972#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

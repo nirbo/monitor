@@ -45,8 +45,8 @@ public class AddServerLayoutFactory extends VerticalLayout implements View, Butt
     }
 
     private void createLayout() {
-        this.setMargin(true);
-        this.setSizeFull();
+        setMargin(true);
+        setSizeFull();
 
         fieldGroup = new BeanFieldGroup<Server>(Server.class);
         server = new Server();
@@ -128,7 +128,7 @@ public class AddServerLayoutFactory extends VerticalLayout implements View, Butt
 
     public void buttonClick(Button.ClickEvent event) {
         if (event.getSource() == this.saveButton) {
-            saveFields();
+            saveServerToDb();
         } else {
             clearFields();
         }
@@ -138,7 +138,7 @@ public class AddServerLayoutFactory extends VerticalLayout implements View, Butt
         ServerNotifier.addServerSuccessNotify();
     }
 
-    private void saveFields() {
+    private void saveServerToDb() {
         try {
             fieldGroup.commit();
         } catch (FieldGroup.CommitException e) {

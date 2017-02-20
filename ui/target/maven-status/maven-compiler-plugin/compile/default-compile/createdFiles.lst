@@ -1,7 +1,7 @@
 org/nirbo/ui/servers/AddServerLayoutFactory.class
-org/nirbo/ui/commons/MainMenuLayoutFactory.class
-org/nirbo/ui/navigator/AppNavigator.class
 org/nirbo/ui/commons/MainMenuLayoutFactory$1.class
-org/nirbo/ui/commons/UILayoutBuilder.class
+org/nirbo/ui/navigator/AppNavigator.class
 org/nirbo/ui/commons/MainMenuLayoutFactory$MainUILayout.class
 org/nirbo/ui/servers/ShowServersLayoutFactory.class
+org/nirbo/ui/commons/MainMenuLayoutFactory.class
+org/nirbo/ui/commons/UILayoutBuilder.class

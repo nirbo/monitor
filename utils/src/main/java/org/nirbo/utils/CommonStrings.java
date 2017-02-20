@@ -5,7 +5,8 @@ public enum CommonStrings {
     SERVERS("Servers"),
     TICKETS("Tickets"),
     ADD_SERVER("Add Server"),
-    SHOW_SERVERS("Show Servers");
+    SHOW_SERVERS("Show Servers"),
+    EDIT("Edit");
 
     private final String string;
 
