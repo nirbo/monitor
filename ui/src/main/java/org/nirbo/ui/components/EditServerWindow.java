@@ -1,17 +1,22 @@
 package org.nirbo.ui.components;
 
+import com.vaadin.client.widget.grid.sort.SortOrder;
+import com.vaadin.data.Container;
 import com.vaadin.data.fieldgroup.BeanFieldGroup;
 import com.vaadin.data.fieldgroup.FieldGroup;
+import com.vaadin.data.util.BeanItemContainer;
 import com.vaadin.navigator.View;
 import com.vaadin.navigator.ViewChangeListener;
 import com.vaadin.ui.*;
 import com.vaadin.ui.themes.ValoTheme;
 import org.nirbo.model.entity.Server;
 import org.nirbo.notifier.ServerNotifier;
+import org.nirbo.service.showservers.ShowServersService;
 import org.nirbo.service.updateserver.UpdateServerService;
-import org.nirbo.ui.commons.MainUI;
 import org.nirbo.utils.LocationStrings;
 import org.nirbo.utils.ServerStrings;
+
+import java.util.List;
 
 public class EditServerWindow extends Window implements View, Button.ClickListener {
 
@@ -27,12 +32,17 @@ public class EditServerWindow extends Window implements View, Button.ClickListen
     private Button cancelButton;
 
     private UpdateServerService updateServerService;
+    private ShowServersService showServersService;
     private BeanFieldGroup<Server> fieldGroup;
     private Server server;
+    private Grid serversTable;
 
-    public EditServerWindow(String caption, Server server, UpdateServerService updateServerService) {
+    public EditServerWindow(String caption, Server server, UpdateServerService updateServerService,
+                            ShowServersService showServersService, Grid serversTable) {
         this.server = server;
         this.updateServerService = updateServerService;
+        this.showServersService = showServersService;
+        this.serversTable = serversTable;
         setCaption(caption);
         createLayout();
     }
@@ -118,6 +128,7 @@ public class EditServerWindow extends Window implements View, Button.ClickListen
     public void buttonClick(Button.ClickEvent event) {
         if (event.getSource() == this.updateButton) {
             updateServerInDb();
+            refreshGrid();
         } else {
             cancelEdit();
         }
@@ -131,9 +142,16 @@ public class EditServerWindow extends Window implements View, Button.ClickListen
         }
 
         updateServerService.updateServer(server);
-        System.out.println("PARENT " + this.getParent().toString());
         close();
         ServerNotifier.updateServerSuccessNotify();
+    }
+
+    private void refreshGrid() {
+        List<com.vaadin.data.sort.SortOrder> sortOrder = serversTable.getSortOrder();
+        List<Server> serverList = showServersService.getAllServers();
+        BeanItemContainer<Server> container = new BeanItemContainer<Server>(Server.class, serverList);
+        serversTable.setContainerDataSource(container);
+        serversTable.setSortOrder(sortOrder);
     }
 
     private void cancelEdit() {

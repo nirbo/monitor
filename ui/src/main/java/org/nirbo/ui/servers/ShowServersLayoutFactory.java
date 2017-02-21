@@ -195,7 +195,8 @@ public class ShowServersLayoutFactory extends VerticalLayout implements View, Bu
                     if (serversTable.isSelected(item)) {
                         Server server = (Server) item;
                         Server serverFromDb = showServersService.getServerById(server.getId());
-                        EditServerWindow editWindow = new EditServerWindow(ServerStrings.EDIT_SERVER.getString(), serverFromDb, updateServerService);
+                        EditServerWindow editWindow = new EditServerWindow(ServerStrings.EDIT_SERVER.getString(), serverFromDb,
+                                                                                updateServerService, showServersService, serversTable);
                         UI.getCurrent().addWindow(editWindow);
                     } else {
                         ServerNotifier.noRowSelectedNotify();
