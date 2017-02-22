@@ -38,6 +38,11 @@
             <artifactId>hibernate-core</artifactId>
             <version>5.2.6.Final</version>
         </dependency>
+        <dependency>
+            <groupId>org.nirbo</groupId>
+            <artifactId>utils</artifactId>
+            <version>0.0.1</version>
+        </dependency>
     </dependencies>
 
     <build>

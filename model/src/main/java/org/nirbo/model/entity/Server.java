@@ -2,6 +2,8 @@ package org.nirbo.model.entity;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
 
 @Entity
 @Table(name="SERVER")
@@ -12,33 +14,42 @@ public class Server {
     @Column(name="id")
     private Long id;
 
-    @Column(name="server_location")
-    @NotNull
-    private String serverLocation;
-
     @Column(name="server_name")
-    @NotNull
+    @NotNull(message = "Field may not be left empty")
+    @Size(min = 1, max = 29, message = "A server name must be provided")
     private String serverName;
 
     @Column(name="server_mgmt_ip")
-    @NotNull
+    @NotNull(message = "Field may not be left empty")
+    @Size(max = 15)
+    @Pattern(message = "Please provide an IPv4 Address",
+            regexp = "^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$")
     private String serverMgmtIP;
 
     @Column(name="server_data_net1")
-    @NotNull
+    @NotNull(message = "Field may not be left empty")
+    @Size(max = 15)
+    @Pattern(message = "Please provide an IPv4 Address",
+            regexp = "^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$")
     private String serverDataNet1;
 
     @Column(name="server_data_net2")
-    @NotNull
+    @NotNull(message = "Field may not be left empty")
+    @Size(max = 15)
+    @Pattern(message = "Please provide an IPv4 Address",
+            regexp = "^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$")
     private String serverDataNet2;
 
     @Column(name="server_owner")
-    @NotNull
+    @NotNull(message = "Field may not be left empty")
+    @Size(min = 1, max = 29, message = "An owner name must be provided")
     private String serverOwner;
 
-    public Server() {
+    @Column(name="server_location")
+    @NotNull(message = "Field may not be left empty")
+    private String serverLocation;
 
-    }
+    public Server() {}
 
     public Long getId() {
         return id;
@@ -46,14 +57,6 @@ public class Server {
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public String getServerLocation() {
-        return serverLocation;
-    }
-
-    public void setServerLocation(String serverLocation) {
-        this.serverLocation = serverLocation;
     }
 
     public String getServerName() {
@@ -96,11 +99,20 @@ public class Server {
         this.serverOwner = serverOwner;
     }
 
+    public String getServerLocation() {
+        return serverLocation;
+    }
+
+    public void setServerLocation(String serverLocation) {
+        this.serverLocation = serverLocation;
+    }
+
     @Override
     public String toString() {
-        return "Server Name: " + serverName
-                + " Server MGMT IP: " + serverMgmtIP
-                + " Server Location: " + serverLocation
-                + " Server Owner: " + serverOwner;
+        return "Server ID: " + id
+                + " | Server Name: " + serverName
+                + " | Server MGMT IP: " + serverMgmtIP
+                + " | Server Location: " + serverLocation
+                + " | Server Owner: " + serverOwner;
     }
 }

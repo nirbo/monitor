@@ -22,7 +22,7 @@ public enum ServerStrings {
 
     private final String string;
 
-    private ServerStrings(String string) {
+    ServerStrings(String string) {
         this.string = string;
     }
 

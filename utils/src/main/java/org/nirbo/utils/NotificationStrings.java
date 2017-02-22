@@ -13,7 +13,7 @@ public enum NotificationStrings {
 
     private final String string;
 
-    private NotificationStrings(String string) {
+    NotificationStrings(String string) {
         this.string = string;
     }
 

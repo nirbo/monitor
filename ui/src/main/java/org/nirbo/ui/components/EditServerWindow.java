@@ -1,7 +1,5 @@
 package org.nirbo.ui.components;
 
-import com.vaadin.client.widget.grid.sort.SortOrder;
-import com.vaadin.data.Container;
 import com.vaadin.data.fieldgroup.BeanFieldGroup;
 import com.vaadin.data.fieldgroup.FieldGroup;
 import com.vaadin.data.util.BeanItemContainer;
@@ -15,12 +13,16 @@ import org.nirbo.service.showservers.ShowServersService;
 import org.nirbo.service.updateserver.UpdateServerService;
 import org.nirbo.utils.LocationStrings;
 import org.nirbo.utils.ServerStrings;
+import org.nirbo.utils.ValidationLengths;
 
 import java.util.List;
 
 public class EditServerWindow extends Window implements View, Button.ClickListener {
 
     public static final String NAME = "editserver";
+
+    private static final int nameValidatorLength = ValidationLengths.VALIDATION_NAME_LENGTH.getLength();
+    private static final int ipValidatorLength = ValidationLengths.VALIDATION_IP_LENGTH.getLength();
 
     private TextField serverName;
     private TextField serverMgmtIP;
@@ -75,11 +77,11 @@ public class EditServerWindow extends Window implements View, Button.ClickListen
         serverLocation.addItem(LocationStrings.DURHAM.getString());
         serverLocation.addItem(LocationStrings.HERZELIYA.getString());
 
-        serverName.setMaxLength(29);
-        serverMgmtIP.setMaxLength(15);
-        serverDataNet1.setMaxLength(15);
-        serverDataNet2.setMaxLength(15);
-        serverOwner.setMaxLength(29);
+        serverName.setMaxLength(nameValidatorLength);
+        serverMgmtIP.setMaxLength(ipValidatorLength);
+        serverDataNet1.setMaxLength(ipValidatorLength);
+        serverDataNet2.setMaxLength(ipValidatorLength);
+        serverOwner.setMaxLength(nameValidatorLength);
 
         serverName.setValue(server.getServerName());
         serverMgmtIP.setValue(server.getServerMgmtIP());

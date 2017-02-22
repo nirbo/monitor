@@ -7,7 +7,7 @@ public enum LocationStrings {
 
     private final String string;
 
-    private LocationStrings(String string) {
+    LocationStrings(String string) {
         this.string = string;
     }
 

@@ -16,6 +16,7 @@ import org.nirbo.ui.commons.MainUI;
 import org.nirbo.utils.CommonStrings;
 import org.nirbo.utils.LocationStrings;
 import org.nirbo.utils.ServerStrings;
+import org.nirbo.utils.ValidationLengths;
 import org.springframework.beans.factory.annotation.Autowired;
 
 @SpringView(name = AddServerLayoutFactory.NAME, ui = MainUI.class)
@@ -23,6 +24,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 public class AddServerLayoutFactory extends VerticalLayout implements View, Button.ClickListener {
 
     public static final String NAME = "addserver";
+
+    private static final int nameValidatorLength = ValidationLengths.VALIDATION_NAME_LENGTH.getLength();
+    private static final int ipValidatorLength = ValidationLengths.VALIDATION_IP_LENGTH.getLength();
 
     @Autowired
     private AddServerService addServerService;
@@ -73,11 +77,11 @@ public class AddServerLayoutFactory extends VerticalLayout implements View, Butt
         serverDataNet2.setNullRepresentation("");
         serverOwner.setNullRepresentation("");
 
-        serverName.setMaxLength(29);
-        serverMgmtIP.setMaxLength(15);
-        serverDataNet1.setMaxLength(15);
-        serverDataNet2.setMaxLength(15);
-        serverOwner.setMaxLength(29);
+        serverName.setMaxLength(nameValidatorLength);
+        serverMgmtIP.setMaxLength(ipValidatorLength);
+        serverDataNet1.setMaxLength(ipValidatorLength);
+        serverDataNet2.setMaxLength(ipValidatorLength);
+        serverOwner.setMaxLength(nameValidatorLength);
 
         serverName.setWidth("25%");
         serverMgmtIP.setWidth("25%");
@@ -93,7 +97,7 @@ public class AddServerLayoutFactory extends VerticalLayout implements View, Butt
         addServerLayout.setMargin(true);
         addServerLayout.setSpacing(true);
 
-        Label addServerTitle = new Label("<H1><CENTER><U>" + CommonStrings.ADD_SERVER.getString() + "</U></CENTER></H1>", ContentMode.HTML);
+        Label addServerTitle = new Label("<H1><CENTER>" + CommonStrings.ADD_SERVER.getString() + "</CENTER></H1>", ContentMode.HTML);
         addServerLayout.addComponent(addServerTitle);
 
         addServerLayout.addComponent(serverName);

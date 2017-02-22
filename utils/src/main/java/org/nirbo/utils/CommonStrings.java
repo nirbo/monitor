@@ -10,7 +10,7 @@ public enum CommonStrings {
 
     private final String string;
 
-    private CommonStrings(String string) {
+    CommonStrings(String string) {
         this.string = string;
     }
 
