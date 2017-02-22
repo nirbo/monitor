@@ -97,6 +97,14 @@
           <element id="library" level="project" name="Maven: org.vaadin.teemusa:gridextensionpack:1.1.1" />
           <element id="library" level="project" name="Maven: org.vaadin.addons:dom:0.1.0" />
           <element id="library" level="project" name="Maven: org.vaadin.addons:animator:2.0.0" />
+          <element id="library" level="project" name="Maven: org.vaadin:viritin:1.61" />
+          <element id="library" level="project" name="Maven: org.vaadin.addon:confirmdialog:2.1.3" />
+          <element id="library" level="project" name="Maven: org.commonjava.googlecode.markdown4j:markdown4j:2.2-cj-1.1" />
+          <element id="library" level="project" name="Maven: commons-io:commons-io:2.4" />
+          <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils:1.9.3" />
+          <element id="library" level="project" name="Maven: commons-collections:commons-collections:3.2.2" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.4" />
+          <element id="library" level="project" name="Maven: javax.el:javax.el-api:2.2.4" />
           <element id="library" level="project" name="Maven: com.google.guava:guava:r05" />
           <element id="archive" name="utils-0.0.1.jar">
             <element id="module-output" name="utils" />
