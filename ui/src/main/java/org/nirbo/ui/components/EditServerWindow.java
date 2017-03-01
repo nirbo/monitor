@@ -1,8 +1,6 @@
 package org.nirbo.ui.components;
 
 import com.vaadin.data.util.BeanItemContainer;
-import com.vaadin.navigator.View;
-import com.vaadin.navigator.ViewChangeListener;
 import com.vaadin.ui.Alignment;
 import com.vaadin.ui.Button;
 import com.vaadin.ui.ComboBox;
@@ -16,7 +14,6 @@ import org.nirbo.utils.LocationStrings;
 import org.nirbo.utils.ServerStrings;
 import org.nirbo.utils.ValidationLengths;
 import org.vaadin.viritin.BeanBinder;
-import org.vaadin.viritin.MBeanFieldGroup;
 import org.vaadin.viritin.button.MButton;
 import org.vaadin.viritin.button.PrimaryButton;
 import org.vaadin.viritin.fields.MTextField;
@@ -26,9 +23,7 @@ import org.vaadin.viritin.layouts.MWindow;
 
 import java.util.List;
 
-public class EditServerWindow extends MWindow implements View, Button.ClickListener {
-
-    public static final String NAME = "editserver";
+public class EditServerWindow extends MWindow implements Button.ClickListener {
 
     private static final int nameValidatorLength = ValidationLengths.VALIDATION_NAME_LENGTH.getLength();
     private static final int ipValidatorLength = ValidationLengths.VALIDATION_IP_LENGTH.getLength();
@@ -44,7 +39,6 @@ public class EditServerWindow extends MWindow implements View, Button.ClickListe
 
     private UpdateServerService updateServerService;
     private ShowServersService showServersService;
-    private MBeanFieldGroup<Server> fieldGroup;
     private Server server;
     private Grid serversTable;
 
@@ -57,8 +51,6 @@ public class EditServerWindow extends MWindow implements View, Button.ClickListe
         setCaption(caption);
         createLayout();
     }
-
-    public void enter(ViewChangeListener.ViewChangeEvent event) {}
 
     private void createLayout() {
         setDraggable(true);
@@ -86,7 +78,6 @@ public class EditServerWindow extends MWindow implements View, Button.ClickListe
     }
 
     private void bindDataToFields() {
-        fieldGroup = new MBeanFieldGroup<Server>(Server.class);
         BeanBinder.bind(server, this);
     }
 

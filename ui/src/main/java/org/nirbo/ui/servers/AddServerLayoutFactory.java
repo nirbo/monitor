@@ -1,13 +1,14 @@
 package org.nirbo.ui.servers;
 
-import com.vaadin.data.fieldgroup.BeanFieldGroup;
-import com.vaadin.data.fieldgroup.FieldGroup;
 import com.vaadin.navigator.View;
 import com.vaadin.navigator.ViewChangeListener;
 import com.vaadin.shared.ui.label.ContentMode;
 import com.vaadin.spring.annotation.SpringComponent;
 import com.vaadin.spring.annotation.SpringView;
-import com.vaadin.ui.*;
+import com.vaadin.ui.Alignment;
+import com.vaadin.ui.Button;
+import com.vaadin.ui.ComboBox;
+import com.vaadin.ui.Label;
 import com.vaadin.ui.themes.ValoTheme;
 import org.nirbo.model.entity.Server;
 import org.nirbo.notifier.ServerNotifier;
@@ -18,10 +19,16 @@ import org.nirbo.utils.LocationStrings;
 import org.nirbo.utils.ServerStrings;
 import org.nirbo.utils.ValidationLengths;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.vaadin.viritin.BeanBinder;
+import org.vaadin.viritin.button.MButton;
+import org.vaadin.viritin.button.PrimaryButton;
+import org.vaadin.viritin.fields.MTextField;
+import org.vaadin.viritin.layouts.MHorizontalLayout;
+import org.vaadin.viritin.layouts.MVerticalLayout;
 
 @SpringView(name = AddServerLayoutFactory.NAME, ui = MainUI.class)
 @SpringComponent
-public class AddServerLayoutFactory extends VerticalLayout implements View, Button.ClickListener {
+public class AddServerLayoutFactory extends MVerticalLayout implements View, Button.ClickListener {
 
     public static final String NAME = "addserver";
 
@@ -31,16 +38,16 @@ public class AddServerLayoutFactory extends VerticalLayout implements View, Butt
     @Autowired
     private AddServerService addServerService;
 
-    private TextField serverName;
-    private TextField serverMgmtIP;
-    private TextField serverDataNet1;
-    private TextField serverDataNet2;
-    private TextField serverOwner;
+    private MTextField serverName;
+    private MTextField serverMgmtIP;
+    private MTextField serverDataNet1;
+    private MTextField serverDataNet2;
+    private MTextField serverOwner;
     private ComboBox serverLocation;
-    private Button saveButton;
-    private Button clearButton;
+    private PrimaryButton saveButton;
+    private MButton clearButton;
 
-    private BeanFieldGroup<Server> fieldGroup;
+    private MVerticalLayout addServerLayout;
     private Server server;
 
     public void enter(ViewChangeListener.ViewChangeEvent event) {
@@ -52,102 +59,92 @@ public class AddServerLayoutFactory extends VerticalLayout implements View, Butt
         setMargin(true);
         setSizeFull();
 
-        fieldGroup = new BeanFieldGroup<Server>(Server.class);
         server = new Server();
 
-        serverName = new TextField(ServerStrings.SERVER_NAME.getString());
-        serverMgmtIP = new TextField(ServerStrings.SERVER_MGMT_IP.getString());
-        serverDataNet1 = new TextField(ServerStrings.SERVER_DATA_NET1.getString());
-        serverDataNet2 = new TextField(ServerStrings.SERVER_DATA_NET2.getString());
-        serverOwner = new TextField(ServerStrings.SERVER_OWNER.getString());
-        serverLocation = new ComboBox(ServerStrings.SERVER_LOCATION.getString());
-
-        saveButton = new Button(ServerStrings.ADD_SERVER.getString());
-        clearButton = new Button(ServerStrings.BUTTON_CLEAR_FORM.getString());
-
-        saveButton.addClickListener(this);
-        clearButton.addClickListener(this);
+        createInputFields();
+        createButtons();
 
         serverLocation.addItem(LocationStrings.DURHAM.getString());
         serverLocation.addItem(LocationStrings.HERZELIYA.getString());
 
-        serverName.setNullRepresentation("");
-        serverMgmtIP.setNullRepresentation("");
-        serverDataNet1.setNullRepresentation("");
-        serverDataNet2.setNullRepresentation("");
-        serverOwner.setNullRepresentation("");
+        bindDataToFields();
+        createFieldsLayout();
+    }
 
+    private void createInputFields() {
+        serverName = new MTextField(ServerStrings.SERVER_NAME.getString())
+                .withWidth("25%");
+        serverMgmtIP = new MTextField(ServerStrings.SERVER_MGMT_IP.getString())
+                .withWidth("25%");
+        serverDataNet1 = new MTextField(ServerStrings.SERVER_DATA_NET1.getString())
+                .withWidth("25%");
+        serverDataNet2 = new MTextField(ServerStrings.SERVER_DATA_NET2.getString())
+                .withWidth("25%");
+        serverOwner = new MTextField(ServerStrings.SERVER_OWNER.getString())
+                .withWidth("25%");
+        serverLocation = new ComboBox(ServerStrings.SERVER_LOCATION.getString());
+        serverLocation.setWidth("25%");
+
+        setFieldValidations();
+    }
+
+    private void setFieldValidations() {
         serverName.setMaxLength(nameValidatorLength);
         serverMgmtIP.setMaxLength(ipValidatorLength);
         serverDataNet1.setMaxLength(ipValidatorLength);
         serverDataNet2.setMaxLength(ipValidatorLength);
         serverOwner.setMaxLength(nameValidatorLength);
+    }
 
-        serverName.setWidth("25%");
-        serverMgmtIP.setWidth("25%");
-        serverDataNet1.setWidth("25%");
-        serverDataNet2.setWidth("25%");
-        serverOwner.setWidth("25%");
-        serverLocation.setWidth("25%");
+    private void bindDataToFields() {
+        BeanBinder.bind(server, this);
+    }
 
-        fieldGroup.bindMemberFields(this);
-        fieldGroup.setItemDataSource(server);
-
-        VerticalLayout addServerLayout = new VerticalLayout();
-        addServerLayout.setMargin(true);
-        addServerLayout.setSpacing(true);
-
+    private void createFieldsLayout() {
         Label addServerTitle = new Label("<H1><CENTER>" + CommonStrings.ADD_SERVER.getString() + "</CENTER></H1>", ContentMode.HTML);
-        addServerLayout.addComponent(addServerTitle);
 
-        addServerLayout.addComponent(serverName);
-        addServerLayout.addComponent(serverMgmtIP);
-        addServerLayout.addComponent(serverDataNet1);
-        addServerLayout.addComponent(serverDataNet2);
-        addServerLayout.addComponent(serverOwner);
-        addServerLayout.addComponent(serverLocation);
+        MHorizontalLayout buttonsLayout = new MHorizontalLayout(
+                saveButton, clearButton)
+                .withMargin(true)
+                .withSpacing(true)
+                .withAlign(saveButton, Alignment.MIDDLE_LEFT)
+                .withAlign(clearButton, Alignment.MIDDLE_RIGHT);
 
-        addServerLayout.setComponentAlignment(serverName, Alignment.MIDDLE_CENTER);
-        addServerLayout.setComponentAlignment(serverMgmtIP, Alignment.MIDDLE_CENTER);
-        addServerLayout.setComponentAlignment(serverDataNet1, Alignment.MIDDLE_CENTER);
-        addServerLayout.setComponentAlignment(serverDataNet2, Alignment.MIDDLE_CENTER);
-        addServerLayout.setComponentAlignment(serverOwner, Alignment.MIDDLE_CENTER);
-        addServerLayout.setComponentAlignment(serverLocation, Alignment.MIDDLE_CENTER);
+        addServerLayout = new MVerticalLayout(
+                addServerTitle, serverName, serverMgmtIP, serverDataNet1, serverDataNet2, serverOwner, serverLocation, buttonsLayout)
+                .withMargin(true)
+                .withSpacing(true)
+                .withAlign(serverName, Alignment.MIDDLE_CENTER)
+                .withAlign(serverMgmtIP, Alignment.MIDDLE_CENTER)
+                .withAlign(serverDataNet1, Alignment.MIDDLE_CENTER)
+                .withAlign(serverDataNet2, Alignment.MIDDLE_CENTER)
+                .withAlign(serverOwner, Alignment.MIDDLE_CENTER)
+                .withAlign(serverLocation, Alignment.MIDDLE_CENTER)
+                .withAlign(buttonsLayout, Alignment.MIDDLE_CENTER);
 
-        saveButton.setStyleName(ValoTheme.BUTTON_PRIMARY);
-        clearButton.setStyleName(ValoTheme.BUTTON_DANGER);
-
-        HorizontalLayout buttonsLayout = new HorizontalLayout();
-        buttonsLayout.setSpacing(true);
-        buttonsLayout.setMargin(true);
-
-        buttonsLayout.addComponents(saveButton, clearButton);
-        buttonsLayout.setComponentAlignment(saveButton, Alignment.MIDDLE_LEFT);
-        buttonsLayout.setComponentAlignment(clearButton, Alignment.MIDDLE_RIGHT);
-
-        addServerLayout.addComponent(buttonsLayout);
-        addServerLayout.setComponentAlignment(buttonsLayout, Alignment.MIDDLE_CENTER);
         addComponent(addServerLayout);
     }
 
     public void buttonClick(Button.ClickEvent event) {
         if (event.getSource() == this.saveButton) {
             saveServerToDb();
-        } else {
-            clearFields();
         }
 
-        addServerService.saveServer(server);
         clearFields();
         ServerNotifier.addServerSuccessNotify();
     }
 
+    private void createButtons() {
+        saveButton = new PrimaryButton(ServerStrings.ADD_SERVER.getString());
+        clearButton = new MButton(ServerStrings.BUTTON_CLEAR_FORM.getString())
+                .withStyleName(ValoTheme.BUTTON_DANGER);
+
+        saveButton.addClickListener(this);
+        clearButton.addClickListener(this);
+    }
+
     private void saveServerToDb() {
-        try {
-            fieldGroup.commit();
-        } catch (FieldGroup.CommitException e) {
-            ServerNotifier.addServerEmptyFieldsNotify();
-        }
+        addServerService.saveServer(server);
     }
 
     private void clearFields() {

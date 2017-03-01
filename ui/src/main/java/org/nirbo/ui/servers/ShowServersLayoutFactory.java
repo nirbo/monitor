@@ -41,9 +41,6 @@ public class ShowServersLayoutFactory extends VerticalLayout implements View, Bu
     private RemoveServerService removeServerService;
 
     @Autowired
-    private AddServerService addServerService;
-
-    @Autowired
     private UpdateServerService updateServerService;
 
     private HorizontalLayout actionButtons;
@@ -155,7 +152,6 @@ public class ShowServersLayoutFactory extends VerticalLayout implements View, Bu
                 serversTable.getSelectionModel().reset();
                 setMultiSelectMode();
                 ServerNotifier.removeServerSuccessNotify();
-
             } else {
                 Grid.SingleSelectionModel selectionModel = (Grid.SingleSelectionModel) serversTable.getSelectionModel();
                 Object selectedItem = selectionModel.getSelectedRow();
@@ -169,7 +165,6 @@ public class ShowServersLayoutFactory extends VerticalLayout implements View, Bu
                     ServerNotifier.noRowSelectedNotify();
                 }
             }
-
         } else {
             ServerNotifier.noRowSelectedNotify();
         }
